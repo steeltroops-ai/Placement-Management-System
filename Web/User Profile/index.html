@@ -112,6 +112,23 @@
                 
             </div>
         </div>
+        <div class="chatBot">
+            <div class="chatBotHeading">
+                <label for="chatTextBox" id="chatOpenTrigger" class="">Placement Queries</label>
+            </div>
+            <hr class="">
+            <div class="chatBody">
+                <div class="chatSession">
+                </div>
+            </div>
+            <form class="chatForm" autocomplete="off">
+                <div class="typingArea">
+                    <textarea name="chatInput" id="chatTextBox" method="GET" class="textArea" onblur="if(!validateMessage()) this.value = 'Type here...'" onfocus="if(!validateMessage()) this.value = ''"></textarea>
+                    <button type="submit" class="sendButton" id="sendButton"><img src="./Gfx/send.svg" alt="Send" srcset=""></button>
+                </div>
+                <button type="button" id="chatCloseTrigger">Close Chat!</button>
+            </form>
+        </div>
 
     </nav>
 
@@ -147,6 +164,7 @@ modeSwitch.addEventListener("click" , () =>{
     }
 });
     </script>
+    <script src="chatBotAnimate.js"></script>
 
 </body>
 </html>
