@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
 padding: 0;
 }
 
@@ -9,6 +9,12 @@ background-color: #222222;
 color: #fff;
 padding: 10px;
 }
+
+.carousel-item {
+height: 40rem;
+width: 100%;
+}
+
 
 nav ul {
 list-style: none;
@@ -29,178 +35,183 @@ text-decoration: none;
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 body{
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #20002c,
- #cbb4d4);
+font-family: 'Poppins', sans-serif;
+
 }
 .show-btn{
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.25);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .show-btn{
-    position: absolute;
-    top: 45%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }
 
 input[type="checkbox"]{
-    display: none;
+  display: none;
 }
 
 #show:checked ~ .container{
-    display: block;
+  display: block;
 }
 
 .container{
-    display: none;
-    width: 350px;
-    padding: 20px;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  display: none;
+  width: 350px;
+  padding: 20px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
 }
 .container{
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%)
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%)
 }
 .container .close-btn{
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 25px;
-    cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .close-btn:hover{
-    color: red;
+  color: red;
 }
 
 h1{
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
 }
 
 form{
-    margin: 20px;
+  margin: 20px;
 }
 label{
-    display: block;
-    color: white;
-    font-size: 18px;
-    margin-top: 10px;
+  display: block;
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 input{
-    display: block;
-    width: 90%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid white;
-    padding: 10px;
-    color: white;
+  display: block;
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  color: white;
 }
 
 button{
-    display: block;
-    width: 95%;
-    padding: 8px;
-    border: none;
-    outline: none;
-    background: linear-gradient(to right, #cbb4d4, 
-    #20002c);
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 20px;
+  display: block;
+  width: 95%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to right, #cbb4d4, 
+  #20002c);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
 
 }
 
 a{
-    text-decoration: none;
-    color: #20002c;
+  text-decoration: none;
+  color: #20002c;
 
 }
 
 .link{
-    margin-top: 30px;
-    text-align: center;
-    color:white;
+  margin-top: 30px;
+  text-align: center;
+  color:white;
 }
 
 a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 
 
 
 #hero {
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    animation: slideshow 5s infinite;
-  }
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  animation: slideshow 5s infinite;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
   
-  #hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #e53935;
+  cursor: pointer;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/745/67/618/jujutsu-kaisen-anime-boys-anime-hd-wallpaper-preview.jpg');
   }
-  
-  #hero p {
-    font-size: 1.5rem;
-    max-width: 600px;
-    margin-bottom: 40px;
+  25% {
+    background-image: url('hero-image-2.jpg');
   }
-  
-  .btn {
-    background-color: #f44336;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
+  50% {
+    background-image: url('hero-image-3.jpg');
   }
-  
-  .btn:hover {
-    background-color: #e53935;
-    cursor: pointer;
+  75% {
+    background-image: url('hero-image-4.jpg');
   }
-  
-  @keyframes slideshow {
-    0% {
-      background-image: url('https://p4.wallpaperbetter.com/wallpaper/745/67/618/jujutsu-kaisen-anime-boys-anime-hd-wallpaper-preview.jpg');
-    }
-    25% {
-      background-image: url('hero-image-2.jpg');
-    }
-    50% {
-      background-image: url('hero-image-3.jpg');
-    }
-    75% {
-      background-image: url('hero-image-4.jpg');
-    }
-    100% {
-      background-image: url('hero-image-5.jpg');
-    }
+  100% {
+    background-image: url('hero-image-5.jpg');
   }
-  
+}
+
 
 #hero {
 background-image: url('Images\505642.png');
@@ -295,5 +306,22 @@ footer {
 background-color: #222;
 color: #fff;
 padding: 10px;
-text-align: center;
+text-align: center;
+}
+
+img{
+  width: 98rem;
+  height: 45rem;
+}
+.P-img-text{
+  color: #f9f9f9;
+}
+.Heading2{
+font-size: 40px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: oblique;
+}
+.listed-box{
+height: 150px;
+width: 350px;
 }

@@ -1,68 +1,647 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Placement Aiding System</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png"
+        type="image/icon type">
+    <!--tailwind-css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
     <input type="checkbox" id="show">
     <label for="show" class="show-btn">View Form</label>
 
     <div class="container">
-        <label for="show" class="close-btn" title="close">×</label>
+        <label for="show" class="close-btn" title="close"></label>
         <h1>Welcome</h1>
         <form action="#">
             <label>Email or Phone</label>
             <input type="text">
             <label>Password</label>
             <form type="password">
-            <a href="#">Forgot Password?</a>
-            <button>Submit</button>
-            <div class="link">Not a member? <a href="#">Sigup here</a></div>
-            
-        <closeform></closeform>
-      </form>
+                <a href="#">Forgot Password?</a>
+                <button>Submit</button>
+                <div class="link">Not a member? <a href="#">Sigup here</a></div>
+
+                <closeform></closeform>
+            </form>
+        </form>
     </div>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      
-      <section id="hero">
-        <h1>Get Personalized Guidance for Your Job Search</h1>
-        <p>Our Placement Aiding System using AIML provides personalized guidance and recommendations to students based on their skills, experience, and interests.</p>
-        <a href="#" class="btn">Get Started</a>
-      </section>
-      <section id="features">
-        <h2>Features</h2>
-        <ul>
-          <li>Personalized guidance and recommendations</li>
-          <li>Interactive chatbot for job search assistance</li>
-          <li>Job boards, career fairs, and company websites</li>
-          <li>Skill assessments and career coaching</li>
-          <li>Industry insights and company profiles</li>
-        </ul>
-      </section>
-      <section id="testimonials">
+
+    <div class="flex justify-center bg-black sticky top-0">
+        <nav class="self-center w-full max-w-12xl  ">
+            <div class="flex flex-col lg:flex-row justify-around items-center text-white">
+
+
+                <ul class="hidden lg:flex items-center text-[18px] font-semibold pl-32">
+
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+                            href="#">About</a></li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+                            href="#">Comapnies</a></li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+                            href="#">contact</a></li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+                            href="#">Login</a></li>
+                </ul>
+                <div class="text-white text-center text-base pr-5  inline-flex"> <a href="#"
+                        class="w-8 h-8 inline-block rounded-full pt-[6px] hover:text-blue-500"><i
+                            class="fa fa-twitter"></i></a> <a href="#"
+                        class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i
+                            class="fa fa-instagram"></i></a> <a href="#"
+                        class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i
+                            class="fa fa-facebook"></i></a> <a href="#"
+                        class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i
+                            class="fa fa-google"></i></a> <a href="#"
+                        class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i
+                            class="fa fa-linkedin"></i></a> </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2022/6/2022_6$largeimg_1501378073.jpg"
+                    alt="Image 1">
+                <div class="carousel-caption">
+                    <section id="hero">
+                        <h1>Get Personalized Guidance for Your Job Search</h1>
+                        <p>Our Placement Aiding System using AIML provides personalized guidance and recommendations to
+                            students based on their skills, experience, and interests.</p>
+                        <a href="#" class="btn">Get Started</a>
+                    </section>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.jainuniversity.ac.in/uploads/blog/db2b1c69fc63b1eb89a6ad774b1b8cb0.jpg"
+                    alt="Image 2">
+                <div class="carousel-caption">
+                    <section id="hero">
+                        <h1>People who are crazy enough to think they can change the world are the ones who do.</h1>
+                        <!-- <p>Our Placement Aiding System using AIML provides personalized guidance and recommendations to
+                            students based on their skills, experience, and interests.</p> -->
+                        <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1429861499/photo/businessman-standing-on-the-top-of-rock-with-number-2023.jpg?b=1&s=170667a&w=0&k=20&c=jaI0V-NgmrWxiJTl4GUim51yhC5-oG1oX291la3Tsgc="
+                    alt="Image 3">
+                <div class="carousel-caption">
+                    <section id="hero">
+                        <h1>Grow with Us!</h1>
+                        <p class="P-img-text">Nothing is Impossible , the word itself says that I'm Possible!</p>
+                        <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section id="features">
+        <h2 class="Heading2">Features</h2>
+        
+        <div class="flex justify-center">
+            <div class="flex flex-col max-w-7xl justify-center items-center">
+                <div class="flex md:flex-row flex-col max-w-7xl justify-center items-center">
+                    <div
+                        class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                        <div class="h-26 w-full overflow-hidden"> <img
+                                src="https://source.unsplash.com/random/500x550/?nature " alt="" class="listed-box" /> </div>
+                        <div class="grid p-2">
+                            <div class="font-bold text-lg text-black m-2 ">Personalized guidance and recommendations
+                            </div>
+                            <!-- <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                    appreciation for someone. They are also a great way to show your love. Flowers can
+                                    be
+                                    delivered in a variety of ways, including through mail, messenger, or even in
+                                    person.
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div
+                        class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                        <div class="h-26 w-full overflow-hidden"> <img
+                                src="https://source.unsplash.com/random/500x550/?boat " alt="" class="listed-box" /> </div>
+                        <div class="grid p-2">
+                            <div class="font-bold text-lg text-black m-2 ">Interactive chatbot for job search assistance
+                            </div>
+                            <!-- <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                    appreciation for someone. They are also a great way to show your love. Flowers can
+                                    be
+                                    delivered in a variety of ways, including through mail, messenger, or even in
+                                    person.
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col max-w-7xl justify-center items-center">
+                    <div
+                        class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                        <div class="h-26 w-full overflow-hidden"> <img
+                                src="https://source.unsplash.com/random/500x550/?galaxy " alt="" class="listed-box" /> </div>
+                        <div class="grid p-2">
+                            <div class="font-bold text-lg text-black m-2 ">Job boards, career fairs, and company
+                                websites
+                            </div>
+                            <!-- <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                    appreciation for someone. They are also a great way to show your love. Flowers can
+                                    be
+                                    delivered in a variety of ways, including through mail, messenger, or even in
+                                    person.
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div
+                        class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                        <div class="h-26 w-full overflow-hidden"> <img
+                                src="https://source.unsplash.com/random/500x550/?beach " alt="" class="listed-box" /> </div>
+                        <div class="grid p-2">
+                            <div class="font-bold text-lg text-black m-2 ">Skill assessments and career coaching
+                            </div>
+                            <!-- <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                    appreciation for someone. They are also a great way to show your love. Flowers can
+                                    be
+                                    delivered in a variety of ways, including through mail, messenger, or even in
+                                    person.
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col max-w-7xl justify-center items-center">
+                    <div
+                        class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                        <div class="h-26 w-full overflow-hidden"> <img
+                            src="https://source.unsplash.com/random/500x550/?boy " alt="" class="listed-box" />
+                        </div>
+                        <div class="grid p-2">
+                            <div class="font-bold text-lg text-black m-2 ">Industry insights and company profiles
+                            </div>
+                            <!-- <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                    appreciation for someone. They are also a great way to show your love. Flowers can
+                                    be
+                                    delivered in a variety of ways, including through mail, messenger, or even in
+                                    person.
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- <div
+                        class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                        <div class="h-26 w-full overflow-hidden"> <img
+                                src="https://source.unsplash.com/random/500x550/?car " alt="" class="" /> </div>
+                        <div class="grid p-2">
+                            <div class="font-bold text-lg text-black m-2 ">Love is like wildflowers; it is often found
+                                in the
+                                most unlikely places.
+                            </div>
+                            <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                    appreciation for someone. They are also a great way to show your love. Flowers can
+                                    be
+                                    delivered in a variety of ways, including through mail, messenger, or even in
+                                    person.
+                                </a></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </section>
+
+    </main>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/106x106"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/107x107"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                                <span class="text-gray-500 text-sm">DESIGNER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex items-center justify-center bg-gray-50 p-4">
+        <div class="flex flex-col max-w-7xl w-full md:w-[90%]">
+            <div class="flex flex-col lg:flex-row  ">
+                <div
+                    class="bg-white shadow-2xl rounded-xl flex items-start h-32 w-[90%] lg:w-1/2 justify-center py-4 px-8 mx-4 my-2">
+                    <div class="flex items-center justify-start w-full">
+                        <div class="flex-col w-[85%]">
+                            <div class="text-sm font-medium text-violet-600 my-2">Companies</div>
+                            <div class="class flex items-center">
+                                <div class="text-3xl font-bold text-gray-700">$2,30,568</div>
+                                <div
+                                    class="flex items-center justify-between mx-2 px-0.5 py-0.5 rounded-xl text-green-500 font-medium ">
+                                    <div class="text-xs bg-green-200 px-2 rounded-lg">+ 78%</div>
+                                </div>
+                            </div>
+                            <div class="w-full h-1 rounded bg-gray-300 my-1">
+                                <div class="w-[78%] h-1 rounded bg-green-500"></div>
+                            </div>
+                            <div class="text-xs font-medium text-gray-400 ">Weekly Goal</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white shadow-lg rounded-xl flex items-start h-32 w-[90%] lg:w-1/2 justify-center py-4 px-8 mx-4 my-2">
+                    <div class="flex items-center justify-start w-full">
+                        <div class="flex-col w-[85%]">
+                            <div class="text-sm font-medium text-violet-600 my-2">Highest Package</div>
+                            <div class="class flex items-center">
+                                <div class="text-3xl font-bold text-gray-700">32.78%</div>
+                                <div
+                                    class="flex items-center justify-between mx-2 px-0.5 py-0.5 rounded-xl text-red-500 font-medium ">
+                                    <div class="text-xs bg-red-200 px-2 rounded-lg">- 7%</div>
+                                </div>
+                            </div>
+                            <div class="w-full h-1 rounded bg-gray-300 my-1">
+                                <div class="w-[33%] h-1 rounded bg-red-500"></div>
+                            </div>
+                            <div class="text-xs font-medium text-gray-400 ">Daily Goal</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-col lg:flex-row ">
+                <div
+                    class="bg-white shadow-lg rounded-xl flex items-start max-w-1/2 w-[90%] lg:w-1/2 justify-center py-4 px-4 mx-4 my-2">
+                    <div class="flex items-center justify-start w-full">
+                        <div class="flex-col w-[85%]">
+                            <div class="text-sm font-medium text-violet-600 my-2">Avg package</div>
+                            <div class="class flex items-center">
+                                <div class="text-3xl font-bold text-gray-700">$6,568</div>
+                                <div
+                                    class="flex items-center justify-between mx-2 px-0.5 py-0.5 rounded-xl text-green-500 font-medium ">
+                                    <div class="text-xs bg-green-200 px-2 rounded-lg">+ 54%</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-4 ">
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[20%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Mon</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[60%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Tue</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[70%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Wed</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[44%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Thu</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[87%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Fri</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[55%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Sat</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[34%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Sun</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white shadow-lg rounded-xl flex items-start max-w-1/2 w-[90%] lg:w-1/2 justify-center py-4 px-4 mx-4 my-2">
+                    <div class="flex items-center justify-start w-full">
+                        <div class="flex-col w-[85%]">
+                            <div class="text-sm font-medium text-violet-600 my-2">Placement rate</div>
+                            <div class="class flex items-center">
+                                <div class="text-3xl font-bold text-gray-700">16,568</div>
+                                <div
+                                    class="flex items-center justify-between mx-2 px-0.5 py-0.5 rounded-xl text-red-500 font-medium ">
+                                    <div class="text-xs bg-red-200 px-2 rounded-lg">- 8.7%</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-4 ">
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[79%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Mon</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[20%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Tue</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[30%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Wed</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[44%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Thu</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[67%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Fri</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[25%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Sat</div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[64%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">Sun</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="testimonials">
         <h2>What Our Students Say</h2>
         <div class="testimonial">
-          <p>"The Placement Aiding System helped me find my dream job. I highly recommend it to anyone who is serious about their career."</p>
-          <cite>- Jane Doe</cite>
+            <p>"The Placement Aiding System helped me find my dream job. I highly recommend it to anyone who is serious
+                about their career."</p>
+            <cite>- Jane Doe</cite>
         </div>
         <div class="testimonial">
-          <p>"The chatbot was very helpful in guiding me through the job search process. It saved me a lot of time and effort."</p>
-          <cite>- John Smith</cite>
+            <p>"The chatbot was very helpful in guiding me through the job search process. It saved me a lot of time and
+                effort."</p>
+            <cite>- John Smith</cite>
         </div>
-      </section>
-    </main>
+    </section>
+
+    <div class="flex justify-center">
+        <div class="flex flex-col md:flex-row max-w-7xl justify-center items-center">
+            <div class="overflow-hidden w-3/4 md:w-1/3 bg-white m-4 shadow-sm flex flex-col justify-center">
+                <div class="h-26 w-full overflow-hidden"> <img alt=""
+                        src="https://www.getmyuni.com/assets/images/main/college/content/5r1r63597291.png"
+                        class="chakra-image css-1xvjg77"> </div>
+                <div class="text-sm text-gray-500 m-2">30 March, 2023</div>
+                <div class="font-bold text-lg text-black m-2">There is something about nature that just feels so
+                    calming.
+                </div>
+                <div class="text-gray-500 m-2 text-sm"><a href="">There is something about nature that just feels so
+                        calming. Whether you are out hiking through the wilderness or simply taking a stroll through
+                        your
+                        local park, being surrounded by natural beauty can really put you in a good mood. And there is
+                        definitely something therapeutic about spending time in nature, whether it is clearing your mind
+                        after a long day or just enjoying the peace and quiet.</a></div>
+                <div class="flex justify-between">
+                    <div class="flex m-2">
+                        <ion-icon name="chatbubble-outline" class="m-1 text-gray-500"></ion-icon>
+                        <div class="text-gray-500 m-1 mb-4 text-sm">896</div>
+                        <ion-icon name="eye-outline" class="m-1 text-gray-500"></ion-icon>
+                        <div class="text-gray-500 m-1 mb-4 text-sm">5648</div>
+                    </div>
+                    <div class="m-2">
+                        <ion-icon name="share-social-outline"
+                            class="m-1 text-blue-500 hover:text-pink-400 cursor-pointer text-xl "> </ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden w-3/4 md:w-1/3 bg-white m-4 shadow-sm flex flex-col justify-center">
+                <div class="h-26 w-full overflow-hidden"> <img
+                        src="https://images.shiksha.com/mediadata/images/articles/1647345757phpK9EuZl_480x360.jpeg"
+                        alt="" class="" /> </div>
+                <div class="text-sm text-gray-500 m-2">30 March, 2023</div>
+                <div class="font-bold text-lg text-black m-2">This is post title</div>
+                <div class="text-gray-500 m-2 text-sm"><a href="">When you go to the beach, there are a few things that
+                        you
+                        should expect. The first thing is that the beach will be hot. The beaches in California are
+                        typically hot, and the beaches in Florida are typically hot.</a></div>
+                <div class="flex justify-between">
+                    <div class="flex m-2">
+                        <ion-icon name="chatbubble-outline" class="m-1 text-gray-500"></ion-icon>
+                        <div class="text-gray-500 m-1 mb-4 text-sm">896</div>
+                        <ion-icon name="eye-outline" class="m-1 text-gray-500"></ion-icon>
+                        <div class="text-gray-500 m-1 mb-4 text-sm">5648</div>
+                    </div>
+                    <div class="m-2">
+                        <ion-icon name="share-social-outline"
+                            class="m-1 text-blue-500 hover:text-pink-400 cursor-pointer text-xl "> </ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden w-3/4 md:w-1/3 bg-white m-4 shadow-sm flex flex-col justify-center">
+                <div class="h-26 w-full overflow-hidden"> <img
+                        src="https://collegevidya.com/blog/wp-content/uploads/2022/07/MBA-Specializations-at-GLA-Online-University.jpg"
+                        alt="" class="" /> </div>
+                <div class="text-sm text-gray-500 m-2">30 March, 2023</div>
+                <div class="font-bold text-lg text-black m-2">This is post title</div>
+                <div class="text-gray-500 m-2 text-sm"><a href="">Galaxies are one of the biggest things in the
+                        Universe.
+                        They are so big that they can be seen with the naked eye. Galaxies are made up of billions of
+                        stars.</a></div>
+                <div class="flex justify-between">
+                    <div class="flex m-2">
+                        <ion-icon name="chatbubble-outline" class="m-1 text-gray-500"></ion-icon>
+                        <div class="text-gray-500 m-1 mb-4 text-sm">896</div>
+                        <ion-icon name="eye-outline" class="m-1 text-gray-500"></ion-icon>
+                        <div class="text-gray-500 m-1 mb-4 text-sm">5648</div>
+                    </div>
+                    <div class="m-2">
+                        <ion-icon name="share-social-outline"
+                            class="m-1 text-blue-500 hover:text-pink-400 cursor-pointer text-xl "> </ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <div>
+        <div class="bg-gray-700 p-3 space-y-10 md:grid grid-cols-2 md:-mt-6 lg:grid-cols-4">
+            <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
+                <h1 class="text-orange-400 text-xl font-medium">Company</h1> <br />
+                <p class="text-gray-300/80 text-base hover:text-yellow-300 cursor-none"> A123 Lost Street <br />
+                    Chandigarh,
+                    PB 535022 <br /> India </p> <br />
+                <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+                        class="tracking-wide text-orange-400 font-normal">Phone:</strong> +91 7008090111 </p>
+                <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+                        class="tracking-wide text-orange-400 font-normal">Email:</strong> info@gmail.com </p>
+            </div>
+            <div class="leading-9 md:w-2/4 md:order-3 md:ml-24">
+                <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Useful Links </h1>
+                <ul class="mt-2 text-gray-300/80">
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Home</a> </li>
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            About Us</a> </li>
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Services</a> </li>
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Terms of service</a> </li>
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Privacy policy</a> </li>
+                </ul>
+            </div>
+            <div class="leading-9 md:w-3/4 md:order-4">
+                <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Our Services </h1>
+                <ul class="mt-2 text-gray-300/80">
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Web
+                            Design</a> </li>
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Web
+                            Development</a> </li>
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Product Management</a> </li>
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Marketing</a> </li>
+                    <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                            Graphic Design</a> </li>
+                </ul>
+            </div>
+            <div class="md:order-2 lg:order-last">
+                <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Join Our Newsletter </h1> <br />
+                <p class="text-gray-300/80 w-3/5 leading-7 mb-5 md:w-3/4"> Join 25,000+ others and never miss out on new
+                    tips,tutorials, and more. </p> <input type="email" placeholder="Enter E-mail Here"
+                    class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:border border-orange-600 md:w-1/2 lg:w-3/5" />
+                <button class="text-white bg-orange-400 p-1 -translate-x-1 rounded-br-xl hover:bg-orange-500"> Subscribe
+                </button>
+            </div>
+        </div>
+        <div
+            class="bg-gray-900 p-3 flex flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
+            <div
+                class="flex mx-3 justify-between space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24 lg:space-x-[13rem] xl:space-x-72 xl:ml-24">
+                <p>@ Copyright <strong>Company.</strong>All Rights Reserved</p>
+                <p>Designed by <span class="text-orange-400">TailwindCSS</span></p>
+            </div>
+            <div
+                class="text-white pb-4 text-center text-xl space-x-2 md:w-2/4 md:pb-0 md:pl-2 md:space-x-1 lg:pl-[171px] lg:space-x-2 xl:pl-44">
+                <a href="#"
+                    class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                        class="fa fa-twitter"></i></a> <a href="#"
+                    class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                        class="fa fa-instagram"></i></a> <a href="#"
+                    class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                        class="fa fa-facebook"></i></a> <a href="#"
+                    class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                        class="fa fa-google"></i></a> <a href="#"
+                    class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                        class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
     <footer>
-      <p>&copy; 2023 Placement Aiding System</p>
+        <p>&copy; 2023 Placement Aiding System</p>
     </footer>
-  </body>
+</body>
+
 </html>
