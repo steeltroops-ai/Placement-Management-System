@@ -29,6 +29,18 @@ body{
     transition: var(--tran-05);
 }
 
+
+
+.name {
+    color: #28743c;
+    
+}
+
+.profession {
+    color: #f1ed01;
+    
+}
+
 ::selection{
     background-color: var(--primary-color);
     color: #fff;
