@@ -34,6 +34,7 @@ let nameDsp = document.getElementById('fullname_dsp'),
     addressDsp = document.getElementById('address_dsp'),
     designationDsp = document.getElementById('designation_dsp'),
     summaryDsp = document.getElementById('summary_dsp'),
+    linksDsp = document.getElementById('links_dsp'),
     projectsDsp = document.getElementById('projects_dsp'),
     achievementsDsp = document.getElementById('achievements_dsp'),
     skillsDsp = document.getElementById('skills_dsp'),
@@ -88,6 +89,10 @@ const getUserInputs = () => {
 
     let skillElem = document.querySelectorAll('.skill');
 
+    let  ghElem = document.querySelectorAll('.github_link'),
+    LinkdlnElem = document.querySelectorAll('.linkdln_link');
+    
+
     // event listeners for form validation
     firstnameElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT, 'First Name'));
     middlenameElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT_EMP, 'Middle Name'));
@@ -115,7 +120,8 @@ const getUserInputs = () => {
     projLinkElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Link')));
     projDescriptionElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Description')));
     skillElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'skill')));
-
+    ghElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Link')));
+    LinkdlnElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Link')));
     return {
         firstname: firstnameElem.value,
         middlename: middlenameElem.value,
@@ -129,7 +135,8 @@ const getUserInputs = () => {
         experiences: fetchValues(['exp_title', 'exp_organization', 'exp_location', 'exp_start_date', 'exp_end_date', 'exp_description'], expTitleElem, expOrganizationElem, expLocationElem, expStartDateElem, expEndDateElem, expDescriptionElem),
         educations: fetchValues(['edu_school', 'edu_degree', 'edu_city', 'edu_start_date', 'edu_graduation_date', 'edu_description'], eduSchoolElem, eduDegreeElem, eduCityElem, eduStartDateElem, eduGraduationDateElem, eduDescriptionElem),
         projects: fetchValues(['proj_title', 'proj_link', 'proj_description'], projTitleElem, projLinkElem, projDescriptionElem),
-        skills: fetchValues(['skill'], skillElem)
+        skills: fetchValues(['skill'], skillElem),
+        Links: fetchValues(['github_link', 'linkdln_link'],ghElem,LinkdlnElem)
     }
 };
 
@@ -205,6 +212,7 @@ const displayCV = (userData) => {
     showListData(userData.skills, skillsDsp);
     showListData(userData.educations, educationsDsp);
     showListData(userData.experiences, experiencesDsp);
+    showListData(userData.Links, linksDsp)
 }
 
 // generate CV
