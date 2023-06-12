@@ -1,7 +1,8 @@
 
 
 
-.home-section .home-content{
+.home-section 
+  .home-content{
     position: relative;
     padding-top: 104px;
   }
