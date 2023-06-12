@@ -1,3 +1,11 @@
+.container {        
+  flex-wrap: wrap; /* Added flex-wrap property */
+  flex: 1;
+  padding-left:auto;  
+  padding-right: auto;  
+  margin-left: 5%;   
+  align-content: center;    
+}
 
 .jobs-list-container {
   max-width: 1200px;
