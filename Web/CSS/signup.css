@@ -9,28 +9,16 @@
 a {
   text-decoration: none;
 }
-.header {
-  position: fixed;
-  height: 80px;
-  width: 100%;
-  z-index: 100;
-  padding: 0 20px;
-}
+
 .nav {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
-.nav,
-.nav_item {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 .button {
-  color: black;
+  color: white;
 }
 
 
@@ -71,13 +59,16 @@ a {
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
   z-index: 101;
-  background: white;
+  background:transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  backdrop-filter: blur(20px);
   padding: 25px;
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-out;
+
 }
 .home.show .form_container {
   opacity: 1;
@@ -97,14 +88,14 @@ a {
   position: absolute;
   top: 10px;
   right: 20px;
-  color: #0b0217;
+  color: black;
   font-size: 22px;
   opacity: 0.7;
   cursor: pointer;
 }
 .form_container h2 {
   font-size: 22px;
-  color: #0b0217;
+  color:white;
   text-align: center;
 }
 .input_box {
@@ -131,7 +122,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
-  color: #707070;
+  color: black;
 }
 .input_box i.email,
 .input_box i.password {
@@ -139,7 +130,7 @@ a {
 }
 .input_box input:focus ~ i.email,
 .input_box input:focus ~ i.password {
-  color: #7d2ae8;
+  color: black;
 }
 .input_box i.pw_hide {
   right: 0;
@@ -153,7 +144,7 @@ a {
   justify-content: space-between;
 }
 .form_container a {
-  color: #7d2ae8;
+  color:yellow;
   font-size: 12px;
 }
 .form_container a:hover {
