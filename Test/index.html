@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forum Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #fff;
+      color: #000000;
+      padding: 30px;
+      margin-bottom: -40px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Added flex-wrap property */
+    }
+
+    .forum-section {
+      flex: 2;
+      padding: 30px;
+      margin-left: 3%; 
+    }
+
+    .questions {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .question-content {
+      flex: 1; /* Added flex property */
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .icons span {
+      margin-left: 10px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 8px;
+      align-items: center;
+      padding: 10px;
+      background-color: #f5f5f5;
+    }
+
+    .post-question {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .post-question input[type="text"] {
+      flex: 1;
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .post-question input[type="submit"] {
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .side-section {
+      flex: 0.7;      
+      padding: 30px;
+      margin-right: 3%;
+      
+    }
+
+    .card {
+      background-color:  #ffffff79;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      align-items: center;
+      margin-bottom: 20px;
+      justify-content: space-between;
+      .h3{
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .p{
+        align-items: center;
+      margin-bottom: 20px;
+      }
+      
+    }
+
+    /* Media queries for responsive design */
+    @media only screen and (max-width: 768px) {
+      .forum-section,
+      .side-section {
+        flex: auto; /* Take up available space */
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .container {
+        flex-direction: column; /* Stack the sections vertically */
+      }
+    }
+
+    .question-content p {
+      overflow: hidden;
+      max-height: 100px;
+    }
+
+    .question-content p.read-more {
+      display: none;
+    }
+
+    .question-content .category {
+      font-size: 12px;
+      color: #666;
+      opacity: 0.5;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .question-content:hover p.read-more {
+      display: block;
+    }
+
+    .question-content:hover .category {
+      opacity: 1;
+    }
+    .rounded-button {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 15px;
+      background-color: rgb(165, 88, 165);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+  <header class="header">
+    <h3><i class='bx bx-home'></i> <a href="#" >Home</a> > <a href="#" >Forum</a></h3>
+  </header>
+
+  <div class="container">
+    <div class="forum-section">     
+
+      <div class="questions">
+        <div class="options">
+          <a href="#" >Latest</a>
+          <a href="#" ></i> Uanswered</a>
+          <a href="#" class="rounded-button"><i class='bx bx-plus'></i> Post Question</a>
+      </div>
+        <div class="question">
+          <div class="question-content">
+            <p>Fire tv stick not working.</p>
+            <p class="read-more"><a href="#">...more</a></p>
+            <span class="category">Category: Programming</span>
+          </div>
+          <div class="icons">
+            <span><i class='bx bx-show' style='font-size: 16px'></i> 10</span>
+            <span><i class='bx bx-like' style='font-size: 16px'></i> 5</span>
+            <span><i class='bx bx-comment' style='font-size: 16px'></i> 3</span>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-content">
+            <p>how many devices can be connected.</p>
+            <p class="read-more"><a href="#">...more</a></p>
+            <span class="category">Category: Design</span>
+          </div>
+          <div class="icons">
+            <span><i class='bx bx-show' style='font-size: 16px'></i> 20</span>
+            <span><i class='bx bx-like' style='font-size: 16px'></i> 8</span>
+            <span><i class='bx bx-comment' style='font-size: 16px'></i> 2</span>
+          </div>
+        </div>
+        
+        <div class="question">
+          <div class="question-content">
+            <p>Fire tv stick not working.</p>
+            <p class="read-more"><a href="#">...more</a></p>
+            <span class="category">Category: Programming</span>
+          </div>
+          <div class="icons">
+            <span><i class='bx bx-show' style='font-size: 16px'></i> 10</span>
+            <span><i class='bx bx-like' style='font-size: 16px'></i> 5</span>
+            <span><i class='bx bx-comment' style='font-size: 16px'></i> 3</span>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-content">
+            <p>how many devices can be connected.</p>
+            <p class="read-more"><a href="#">...more</a></p>
+            <span class="category">Category: Design</span>
+          </div>
+          <div class="icons">
+            <span><i class='bx bx-show' style='font-size: 16px'></i> 20</span>
+            <span><i class='bx bx-like' style='font-size: 16px'></i> 8</span>
+            <span><i class='bx bx-comment' style='font-size: 16px'></i> 2</span>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-content">
+            <p>Fire tv stick not working.</p>
+            <p class="read-more"><a href="#">...more</a></p>
+            <span class="category">Category: Programming</span>
+          </div>
+          <div class="icons">
+            <span><i class='bx bx-show' style='font-size: 16px'></i> 10</span>
+            <span><i class='bx bx-like' style='font-size: 16px'></i> 5</span>
+            <span><i class='bx bx-comment' style='font-size: 16px'></i> 3</span>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-content">
+            <p>how many devices can be connected.</p>
+            <p class="read-more"><a href="#">...more</a></p>
+            <span class="category">Category: Design</span>
+          </div>
+          <div class="icons">
+            <span><i class='bx bx-show' style='font-size: 16px'></i> 20</span>
+            <span><i class='bx bx-like' style='font-size: 16px'></i> 8</span>
+            <span><i class='bx bx-comment' style='font-size: 16px'></i> 2</span>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-content">
+            <p>Fire tv stick not working.</p>
+            <p class="read-more"><a href="#">...more</a></p>
+            <span class="category">Category: Programming</span>
+          </div>
+          <div class="icons">
+            <span><i class='bx bx-show' style='font-size: 16px'></i> 10</span>
+            <span><i class='bx bx-like' style='font-size: 16px'></i> 5</span>
+            <span><i class='bx bx-comment' style='font-size: 16px'></i> 3</span>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-content">
+            <p>how many devices can be connected.</p>
+            <p class="read-more"><a href="#">...more</a></p>
+            <span class="category">Category: Design</span>
+          </div>
+          <div class="icons">
+            <span><i class='bx bx-show' style='font-size: 16px'></i> 20</span>
+            <span><i class='bx bx-like' style='font-size: 16px'></i> 8</span>
+            <span><i class='bx bx-comment' style='font-size: 16px'></i> 2</span>
+          </div>
+        </div>      
+    </div>
+    <div align = center >
+      <a href="#" class="rounded-button">View More</a>
+    </div>
+      <div class="post-question" >
+        <input type="text" placeholder="Enter your question">
+        <input type="submit" value="Post">
+      </div>
+    </div>
+    
+    <div class="side-section">
+      <div class="card">
+        <h3>Top 5 Questions</h3>
+        <p>Question 1</p>
+        <p>Question 2</p>
+        <p>Question 2</p>
+        <p>Question 2</p>
+        <p>Question 2</p> 
+        <p class="read-more"><a href="#">read more...</a></p>       
+      </div>
+
+      <div class="card">
+        <h3>Most Recent Activity</h3>
+        <p>Activity 1</p>
+        <p>Activity 2</p>
+        <p>Activity 2</p>
+        <p>Activity 2</p>
+        <p>Activity 2</p>  
+        <p class="read-more"><a href="#">read more...</a></p>         
+      </div>
+
+      <div class="card">
+        <h3>Hot Deals</h3>
+        <p>Deal 1</p>
+        <p>Deal 2</p>
+        <p>Deal 2</p>
+        <p>Deal 2</p>
+        <p>Deal 2</p>
+        <p class="read-more"><a href="#">read more...</a></p>    
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

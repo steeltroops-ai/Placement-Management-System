@@ -317,6 +317,9 @@ body.dark .home .text{
     color: var(--text-color);
 }
 
+.sidebar:hover ul li{
+  justify-content: flex-start;
+}
 
 
 
@@ -333,7 +336,7 @@ body.dark .home .text{
 
 
 
-
+/* Chatbot CSS */
 
 
 

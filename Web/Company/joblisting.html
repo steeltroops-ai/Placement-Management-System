@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>GLAU Placements</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png"
+      type="image/x-icon"
+    />
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="style1.css" />
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png"
+              alt="logo"
+              width="50"
+              height="50"
+              align="center"
+            />
+
+            <!--<img src="logo.png" alt="">-->
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">GLA University</span>
+            <span class="profession">Placements</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="../Dashboard/index.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="../JobListing/index.html">
+                <i class="bx bx-briefcase icon"></i>
+                <span class="text nav-text">Job Listings</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="../Applicants/index.html">
+                <i class="bx bx-receipt icon"></i>
+                <span class="text nav-text">Applicants</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="../Profile/index.html">
+                <i class="bx bx-user icon"></i>
+                <span class="text nav-text">Profile</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="">
+            <a href="../Web/HomePage/index.html">
+              <i class="bx bx-log-out icon"></i>
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">Placement Manager</div>
+
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+        <!-- Content -->
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+          <h4 class="fw-bold py-3 mb-4">
+            <span class="text-muted fw-light"></span> List Jobs Vacancies
+          </h4>
+
+          <!-- Basic with Icons -->
+          <div class="col-xxl">
+            <div class="card mb-4">
+              <div
+                class="card-header d-flex align-items-center justify-content-between"
+              >
+                <h5 class="mb-0">Add the Job Profile</h5>
+                <small class="text-muted float-end"></small>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row mb-3">
+                    <label
+                      class="col-sm-2 col-form-label"
+                      for="basic-icon-default-fullname"
+                      >Name</label
+                    >
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span
+                          id="basic-icon-default-fullname2"
+                          class="input-group-text"
+                          ><i class="bx bx-user"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="basic-icon-default-fullname"
+                          placeholder="Company Name"
+                          aria-label="John Doe"
+                          aria-describedby="basic-icon-default-fullname2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label
+                      class="col-sm-2 col-form-label"
+                      for="basic-icon-default-company"
+                      >Job Position</label
+                    >
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span
+                          id="basic-icon-default-company2"
+                          class="input-group-text"
+                          ><i class="bx bx-buildings"></i
+                        ></span>
+                        <input
+                          type="text"
+                          id="basic-icon-default-company"
+                          class="form-control"
+                          placeholder="ACME Inc."
+                          aria-label="ACME Inc."
+                          aria-describedby="basic-icon-default-company2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label
+                      class="col-sm-2 col-form-label"
+                      for="basic-icon-default-company"
+                      >Last date to apply
+                    </label>
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span
+                          id="basic-icon-default-company3"
+                          class="input-group-text"
+                          ><i class="bx bx-time-five"></i
+                        ></span>
+                        <input
+                          type="date"
+                          id="basic-icon-default-company"
+                          class="form-control"
+                          placeholder="Last Date To Apply"
+                          aria-label="ACME Inc."
+                          aria-describedby="basic-icon-default-company2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label
+                      class="col-sm-2 form-label"
+                      for="basic-icon-default-phone"
+                      >Salary</label
+                    >
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span
+                          id="basic-icon-default-phone2"
+                          class="input-group-text"
+                          ><i class='bx bx-money-withdraw'></i></span>
+                        <input
+                          type="text"
+                          id="basic-icon-default-phone"
+                          class="form-control phone-mask"
+                          placeholder="Rs. 00.00/."
+                          aria-label="658 799 8941"
+                          aria-describedby="basic-icon-default-phone2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label
+                      class="col-sm-2 form-label"
+                      for="basic-icon-default-message"
+                      >Required Skills</label
+                    >
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span
+                          id="basic-icon-default-message2"
+                          class="input-group-text"
+                          ><i class="bx bx-comment"></i
+                        ></span>
+                        <textarea
+                          id="basic-icon-default-message"
+                          class="form-control"
+                          placeholder="HTML, CSS, JS, JAVA, KOTLIN, XML, WEBd, APPd, MYSQL, DJANGO, etc...."
+                          aria-label="Hi, Do you have a moment to talk Joe?"
+                          aria-describedby="basic-icon-default-message2"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-end">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">
+                        Update
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Content -->
+    </section>
+
+    <script>
+      const body = document.querySelector("body"),
+        sidebar = body.querySelector("nav"),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+      toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+
+      searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+      });
+
+      modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+          modeText.innerText = "Light mode";
+        } else {
+          modeText.innerText = "Dark mode";
+        }
+      });
+    </script>
+  </body>
+</html>
