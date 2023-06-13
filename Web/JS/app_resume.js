@@ -200,6 +200,37 @@ const showListData = (listData, listContainer) => {
     })
 }
 
+const showListData2 = (listData, listContainer) => {
+    listContainer.innerHTML = "";
+    listData.forEach((listItem) => {
+      let itemElem = document.createElement('div');
+      itemElem.classList.add('preview-item');
+  
+      for (const key in listItem) {
+        let subItemElem = document.createElement('span');
+        subItemElem.classList.add('preview-item-val');
+  
+        // Check if the key is for GitHub link
+        if (key === 'github_link') {
+          subItemElem.innerHTML = `GitHub: <a href="${listItem[key]}" target="_blank">${listItem[key]}</a>`;
+        }
+        // Check if the key is for LinkedIn link
+        else if (key === 'linkdln_link') {
+          subItemElem.innerHTML = `LinkedIn: <a href="${listItem[key]}" target="_blank">${listItem[key]}</a>`;
+        }
+        // Handle other keys normally
+        else {
+          subItemElem.innerHTML = `${key}: ${listItem[key]}`;
+        }
+  
+        itemElem.appendChild(subItemElem);
+      }
+  
+      listContainer.appendChild(itemElem);
+    });
+  };
+  
+
 const displayCV = (userData) => {
     nameDsp.innerHTML = userData.firstname + " " + userData.middlename + " " + userData.lastname;
     phonenoDsp.innerHTML = userData.phoneno;
@@ -207,13 +238,40 @@ const displayCV = (userData) => {
     addressDsp.innerHTML = userData.address;
     designationDsp.innerHTML = userData.designation;
     summaryDsp.innerHTML = userData.summary;
-    showListData(userData.projects, projectsDsp);
+    showListData3(userData.projects, projectsDsp, true);
     showListData(userData.achievements, achievementsDsp);
-    showListData(userData.skills, skillsDsp);
+    showListData3(userData.skills, skillsDsp, true);
     showListData(userData.educations, educationsDsp);
     showListData(userData.experiences, experiencesDsp);
-    showListData(userData.Links, linksDsp)
+    showListData2(userData.Links, linksDsp)
 }
+
+
+const showListData3 = (listData, listContainer, bulletPoints = false) => {
+    listContainer.innerHTML = "";
+    listData.forEach(listItem => {
+        let itemElem = document.createElement('div');
+        itemElem.classList.add('preview-item');
+        
+        for(const key in listItem){
+            let subItemElem = document.createElement('span');
+            subItemElem.classList.add('preview-item-val');
+            
+            // Check if bullet points should be added
+            if (bulletPoints) {
+                subItemElem.innerHTML = `&bull; ${listItem[key]}`; // Add bullet point
+            } else {
+                subItemElem.innerHTML = `${listItem[key]}`;
+            }
+            
+            itemElem.appendChild(subItemElem);
+        }
+
+        listContainer.appendChild(itemElem);
+    })
+};
+
+
 
 // generate CV
 const generateCV = () => {

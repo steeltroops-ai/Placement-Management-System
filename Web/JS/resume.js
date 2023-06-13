@@ -14,6 +14,17 @@ $(document).ready(function(){
                 generateCV();
             }, 500);
         },
-        isFirstItemUndeletable:true
+        isFirstItemUndeletable: true
+    })
 })
-})
+
+function handleEducationTypeChange(selectElement) {
+    var degreeInput = selectElement.parentNode.nextElementSibling.querySelector('.edu_degree');
+    if (selectElement.value === 'college') {
+        degreeInput.disabled = false;
+    } else {
+        degreeInput.disabled = true;
+        degreeInput.value = '';
+    }
+    generateCV();
+}
