@@ -95,12 +95,16 @@ const jobs = [
   const jobSearch = document.querySelector(".jobs-list-container .job-search");
   
   let searchTerm = "";
-  
+
+
+  /*
   if (jobs.length == 1) {
     jobsHeading.innerHTML = `${jobs.length} Job Available`;
   } else {
     jobsHeading.innerHTML = `${jobs.length} Jobs Available`;
   }
+  */
+  
   
   const createJobListingCards = () => {
     jobsContainer.innerHTML = "";
