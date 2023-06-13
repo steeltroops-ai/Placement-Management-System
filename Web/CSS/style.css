@@ -9,7 +9,7 @@
 
 :root{
     /* ===== Colors ===== */
-    --body-color: #f2f2f2;
+    --body-color: #faf8f8;
     --sidebar-color: #fff;
     --primary-color: #695CFE;
     --primary-color-light: #F6F5FF;
@@ -63,6 +63,7 @@ body.dark{
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .sidebar.close{
     width: 88px;
