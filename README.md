@@ -24,11 +24,11 @@ Some students do not know how to create a professional and impactful resume.
 
 
 ## Features
-![](path/to/your/image.jpg)
+![Web](path/to/your/image.jpg)
 
 
 ## Visual Representation
-![](path/to/your/image.jpg)
+![Web](path/to/your/image.jpg)
 
 
 ## Revenue Model
