@@ -568,16 +568,12 @@ textarea{
 /* print section */
 @media print {
     body * {
-        visibility: hidden;
-    }
-
-    .non_print_area {
         display: none;
     }
 
     .print_area,
     .print_area * {
-        visibility: visible;
+        display: block;
     }
 
     .print_area {
@@ -585,10 +581,6 @@ textarea{
         position: absolute;
         left: 0;
         top: 0;
-        overflow: hidden;
-    }
+        overflow:hidden;
 }
-
-.no-bullets {
-    list-style-type: none;
 }
