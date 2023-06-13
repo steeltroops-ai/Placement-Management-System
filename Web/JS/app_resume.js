@@ -59,7 +59,43 @@ const fetchValues = (attrs, ...nodeLists) => {
     }
 
     return tempDataArr;
+    
 }
+
+const fetchProjectValues = (attrs, ...nodeLists) => {
+    let elemsAttrsCount = nodeLists.length;
+    let elemsDataCount = nodeLists[0].length;
+    let tempDataArr = [];
+  
+    // first loop deals with the no of repeaters value
+    for (let i = 0; i < elemsDataCount; i++) {
+      let dataObj = {}; // creating an empty object to fill the data
+      // second loop fetches the data for each repeaters value or attributes
+      for (let j = 0; j < elemsAttrsCount; j++) {
+        // setting the key name for the object and fill it with data
+        const attrName = attrs[j];
+        const attrValue = nodeLists[j][i].value;
+  
+        if (attrName === "proj_link") {
+          // Create a clickable link element
+          const linkElement = document.createElement("a");
+          linkElement.href = attrValue;
+          linkElement.target = "_blank";
+          linkElement.textContent = attrValue;
+  
+          // Set the projectLink attribute value as the HTML of the link element
+          dataObj[attrName] = linkElement.outerHTML;
+        } else {
+          dataObj[attrName] = attrValue;
+        }
+      }
+      tempDataArr.push(dataObj);
+    }
+  
+    return tempDataArr;
+  };
+  
+
 
 const getUserInputs = () => {
 
@@ -134,7 +170,7 @@ const getUserInputs = () => {
         achievements: fetchValues(['achieve_title', 'achieve_description'], achievementsTitleElem, achievementsDescriptionElem),
         experiences: fetchValues(['exp_title', 'exp_organization', 'exp_location', 'exp_start_date', 'exp_end_date', 'exp_description'], expTitleElem, expOrganizationElem, expLocationElem, expStartDateElem, expEndDateElem, expDescriptionElem),
         educations: fetchValues(['edu_school', 'edu_degree', 'edu_city', 'edu_start_date', 'edu_graduation_date', 'edu_description'], eduSchoolElem, eduDegreeElem, eduCityElem, eduStartDateElem, eduGraduationDateElem, eduDescriptionElem),
-        projects: fetchValues(['proj_title', 'proj_link', 'proj_description'], projTitleElem, projLinkElem, projDescriptionElem),
+        projects: fetchProjectValues(['proj_title', 'proj_link', 'proj_description'], projTitleElem, projLinkElem, projDescriptionElem),
         skills: fetchValues(['skill'], skillElem),
         Links: fetchValues(['github_link', 'linkdln_link'],ghElem,LinkdlnElem)
     }

@@ -1,3 +1,9 @@
+function optionClicked(checkbox) {
+    var option = checkbox.parentNode;
+  option.classList.toggle("selected");
+  }
+
+
 const jobs = [
     {
       title: "Software Engineer",
@@ -97,9 +103,9 @@ const jobs = [
   let searchTerm = "";
   
   if (jobs.length == 1) {
-    jobsHeading.innerHTML = `${jobs.length} Job Available`;
+    jobsHeading.innerHTML = ` Recent Jobs`;
   } else {
-    jobsHeading.innerHTML = `${jobs.length} Jobs Available`;
+    jobsHeading.innerHTML = ` Recent Jobs`;
   }
   
   const createJobListingCards = () => {
@@ -149,3 +155,7 @@ const jobs = [
   
     createJobListingCards();
 });
+
+
+
+
