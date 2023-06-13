@@ -17,7 +17,8 @@
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/dashboard.css" />
-
+    <link rel="stylesheet" href="../CSS/chatBot.css" />
+    
     <!----===== Boxicons CSS ===== -->
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
@@ -130,30 +131,23 @@
       </div>
       <div class="chatBot">
         <div class="chatBotHeading">
-          <label for="chatTextBox" id="chatOpenTrigger" class="" >Placement Queries</label
-          >
+            <label for="chatTextBox" id="chatOpenTrigger" class="">Queries</label>
         </div>
-        <hr class="" />
+        <hr class="">
         <div class="chatBody">
-          <div class="chatSession"></div>
+            <div class="chatSession">
+            </div>
         </div>
         <form class="chatForm" autocomplete="off">
-          <div class="typingArea">
-            <textarea
-              name="chatInput"
-              id="chatTextBox"
-              method="GET"
-              class="textArea"
-              onblur="if(!validateMessage()) this.value = 'Type here...'"
-              onfocus="if(!validateMessage()) this.value = ''"
-            ></textarea>
-            <button type="submit" class="sendButton" id="sendButton">
-              <img src="./Gfx/send.svg" alt="Send" srcset="" />
-            </button>
-          </div>
-          <button type="button" id="chatCloseTrigger">Close Chat!</button>
+            <div class="typingArea">
+                <textarea name="chatInput" id="chatTextBox" method="GET" class="textArea" onblur="if(!validateMessage()) this.value = 'Type here...'" onfocus="if(!validateMessage()) this.value = ''"></textarea>
+                <button type="submit" class="sendButton" id="sendButton"><img src="../CSS/Gfx/send.svg" alt="Send" srcset=""></button>
+            </div>
+            <button type="button" id="chatCloseTrigger">Close Chat!</button>
         </form>
       </div>
+      
+      
     </nav>
 
 
@@ -397,6 +391,7 @@
             </div>
         </div>
     </div>
+
       
     </section>
     
@@ -427,6 +422,24 @@
         }
       });
     </script>
-    <script src="chatBotAnimate.js"></script>
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="../JS/ChatJs/chatBotAnimate.js"></script>
+    <script src="../JS/ChatJs/chatBotConversation.js"></script>
+    <script src="../JS/ChatJs/chatBotCustom.js"></script>
+    <script src="../JS/ChatJs/chatBotLiveCustom.js"></script>
+    <script src="../JS/ChatJs/chatBotValidate.js"></script>
+    <script src="../JS/ChatJs/customSettingsDownload.js"></script>
+   
+
   </body>
 </html>

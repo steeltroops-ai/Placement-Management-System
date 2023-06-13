@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot - Hina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/chatBot.css">
+    <link rel="shortcut icon" href="gfx/logo.png" type="image/x-icon">
+    <style></style>
+</head>
+<body>
+    <section class="heroContainer">
+        <div class="hero">
+            <img src="./Gfx/logoFullSite.png" class="logo" alt="ChatBot UI Logo">
+            <hr>
+            <h1>---  Logic Loaders Team  ---</h1>
+            <div class="customUIFLex" align="center">
+                <form class="stylingController" autocomplete="off">
+                    <h1 class="title" align="center">Team Members</h1>
+                    <table>
+                        <tbody>
+                            <tr id="accentController" align="center">
+                                <td class="property">
+                                    <label for="accentColorInput"> Naman Sharma</label>
+                                </td>
+                            </tr>
+                            <tr id="backgroundController" align="center">
+                                <td class="property">
+                                    <label for="backgroundColorInput"> Mayank Pratap Singh</label>
+                                </td>
+                            </tr>
+                            <tr id="headingController" align="center">
+                                <td class="property">
+                                    <label for="chatHeadingInput">Somanth Kaushik</label>
+                                </td>
+                            </tr>
+                            <tr id="defaultTextController" align="center">
+                                <td class="property">
+                                    <label for="defaultMessageInput">Yash Bhargava</label>
+                                </td>
+                            </tr>
+                            <tr id="defaultTextController" align="center">
+                                <td class="property">
+                                    <label for="defaultMessageInput">Bhoomi Shakya</label>
+                                </td>
+                            </tr>
+                            <tr id="defaultTextController" align="center">
+                                <td class="property">
+                                    <label for="defaultMessageInput">Harsh Prakash Bharti</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="instructions">
+                    <h3> --- About This Project --- </h3>
+                    <p>.</p>
+                    <p>AI based chatbot to answer FAQs. </p>
+                    <p>.</p>
+                   
+                    <ul>
+                        <h5>We are developing this AI based chatbot that can give answer of any query based on FAQs. We are using machine learning to train bot to give the most accurate answer from given dataset of questions and answers.</h5>
+                        <p>.</p>
+                        <h5>We are trying to  train the chatbot so it can maintain mapping of questions and answers under every condition. Also we're working on improving chatbot to be more interactive and freindliness.</h5>
+                    </ul>                 
+                </div>
+            </div>            
+        </div>
+        <div class="heroLinks">
+            <h4>Lock and Load....</h4>
+        </div>
+    </section>
+    <div class="chatBot">
+        <div class="chatBotHeading">
+            <label for="chatTextBox" id="chatOpenTrigger" class="">Any Queries? Ask Me!</label>
+        </div>
+        <hr class="">
+        <div class="chatBody">
+            <div class="chatSession">
+            </div>
+        </div>
+        <form class="chatForm" autocomplete="off">
+            <div class="typingArea">
+                <textarea name="chatInput" id="chatTextBox" method="GET" class="textArea" onblur="if(!validateMessage()) this.value = 'Type here...'" onfocus="if(!validateMessage()) this.value = ''"></textarea>
+                <button type="submit" class="sendButton" id="sendButton"><img src="./Gfx/send.svg" alt="Send" srcset=""></button>
+            </div>
+            <button type="button" id="chatCloseTrigger">Close Chat!</button>
+        </form>
+    </div>
+    <!-- JavaScripts from native directory -->
+    <script src="./Js/chatBotConversation.js"></script>
+    <script src="./Js/chatBotValidate.js"></script>
+    <script src="./Js/chatBotAnimate.js"></script>
+    <!--     <script src="./Js/chatBotCustom.js"></script> -->
+    
+    <!-- JavaScripts from GitHub directory -->
+    <script src="./Js/chatBotLiveCustom.js"></script>
+    <script src="./Js/customSettingsDownload.js"></script>
+
+</body>
+</html>
