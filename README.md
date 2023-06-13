@@ -1,4 +1,4 @@
-# Placement Aiding System
+# Placement Manager
 
 ## Problems
 1. Job Placement Issues
