@@ -24,6 +24,7 @@ Some students do not know how to create a professional and impactful resume.
 
 
 ## Features
-image.png
+![Placement Manager]([path/to/your/image.jpg](https://drive.google.com/file/d/1iKqdBfvBC8sb66EgPqVseUyndp6CP1Gs/view?usp=sharing))
+
 
 ## Visual Representation
