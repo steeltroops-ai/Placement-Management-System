@@ -17,27 +17,6 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         
   
-
-
-    <style>
-      
-        
-      </style>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	
 </head>
 <body>
@@ -169,17 +148,22 @@
 
 
     
-  
-  
+
+        
      
+        `   <section  class="home">
+                <div  class="container">
+                    
+                
+        
                
                 <nav class = "navbar bg-white">
                     <div class="container">
                         <div class = "navbar-content">
-                            <div class = "brand-and-toggler">
-                                <a href = "" class = "navbar-brand ">
+                            <div class = "brand-and-toggler" >
+                                <a href = "" class = "navbar-brand " >
                                     <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
-                                    <span class = "navbar-brand-text">Create your own <span>resume.</span>
+                                    <span class = "navbar-brand-text">Create your own <span>Resume.</span>
                                 </a>
                                 
                             </div>
@@ -576,8 +560,8 @@
                     </div>
                 </section>
         
-        
-        
+            </div>
+            </section>
                 
         
                 <!-- jquery cdn -->
@@ -601,41 +585,44 @@
 	
 		
    
-    <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
-
-
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
     
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-        
-    }
-});
-    </script>
-
-<script src="../JS/ChatJs/chatBotAnimate.js"></script>
-<script src="../JS/ChatJs/chatBotConversation.js"></script>
-<script src="../JS/ChatJs/chatBotCustom.js"></script>
-<script src="../JS/ChatJs/chatBotLiveCustom.js"></script>
-<script src="../JS/ChatJs/chatBotValidate.js"></script>
-<script src="../JS/ChatJs/customSettingsDownload.js"></script>
-
+                <script>
+                    const body = document.querySelector('body'),
+                    sidebar = body.querySelector('nav'),
+                    toggle = body.querySelector(".toggle"),
+                    searchBtn = body.querySelector(".search-box"),
+                    modeSwitch = body.querySelector(".toggle-switch"),
+                    modeText = body.querySelector(".mode-text");
+              
+              
+                    toggle.addEventListener("click" , () =>{
+                      sidebar.classList.toggle("close");
+                    })
+              
+                    searchBtn.addEventListener("click" , () =>{
+                      sidebar.classList.remove("close");
+                    })
+              
+                    modeSwitch.addEventListener("click" , () =>{
+                      body.classList.toggle("dark");
+                      
+                      if(body.classList.contains("dark")){
+                          modeText.innerText = "Light mode";
+                      }else{
+                          modeText.innerText = "Dark mode";
+                          
+                      }
+                    });
+                  </script>
+              
+              
+                  
+                  
+                  <script src="../JS/ChatJs/chatBotAnimate.js"></script>
+                  <script src="../JS/ChatJs/chatBotConversation.js"></script>
+                  <script src="../JS/ChatJs/chatBotCustom.js"></script>
+                  <script src="../JS/ChatJs/chatBotLiveCustom.js"></script>
+                  <script src="../JS/ChatJs/chatBotValidate.js"></script>
+                  <script src="../JS/ChatJs/customSettingsDownload.js"></script>
 </body>
 </html>
