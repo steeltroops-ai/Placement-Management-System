@@ -168,6 +168,7 @@
 
     <section class="home">
       <div class="home-content">
+
         
         <nav x-data="{ isOpen: false }" class="relative bg-white shadow dark:bg-gray-800">
           <div class="container px-6 py-4 mx-auto">
@@ -213,6 +214,7 @@
               </div>
           </div>
       </nav>
+      
 
 
 
@@ -221,7 +223,7 @@
         <div class="overview-boxes">
             <div class="box">
                 <div class="right-side">
-                    <div class="box-topic">Total Placed Students</div>
+                    <div class="box-topic">Total Placed Stu.</div>
                     <div class="number">810</div>
                     <div class="indicator">
                         <i class='bx bx-up-arrow-alt'></i>
@@ -233,7 +235,7 @@
             </div>
             <div class="box">
                 <div class="right-side">
-                    <div class="box-topic">Total Offers Made</div>
+                    <div class="box-topic">Total Offers</div>
                     <div class="number">1022</div>
                     <div class="indicator">
                         <i class='bx bx-up-arrow-alt'></i>
@@ -257,8 +259,8 @@
             </div>
             <div class="box">
                 <div class="right-side">
-                    <div class="box-topic">Highest Package Offered</div>
-                    <div class="number">Rs. 55,00,000</div>
+                    <div class="box-topic">Highest Package </div>
+                    <div class="number">Rs. 55 Lakhs</div>
                     <div class="indicator">
                         <!-- <i class='bx bx-down-arrow-alt down'></i> -->
                         <i class='bx bx-up-arrow-alt'></i>
@@ -398,32 +400,32 @@
 
     <script>
       const body = document.querySelector('body'),
-    sidebar = body.querySelector('nav'),
-    toggle = body.querySelector(".toggle"),
-    searchBtn = body.querySelector(".search-box"),
-    modeSwitch = body.querySelector(".toggle-switch"),
-    modeText = body.querySelector(".mode-text");
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
 
 
-toggle.addEventListener("click" , () =>{
-  sidebar.classList.toggle("close");
-})
+      toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+      })
 
-searchBtn.addEventListener("click" , () =>{
-  sidebar.classList.remove("close");
-})
+      searchBtn.addEventListener("click" , () =>{
+        sidebar.classList.remove("close");
+      })
 
-modeSwitch.addEventListener("click" , () =>{
-  body.classList.toggle("dark");
-  
-  if(body.classList.contains("dark")){
-      modeText.innerText = "Light mode";
-  }else{
-      modeText.innerText = "Dark mode";
-      
-  }
-});
-  </script>
+      modeSwitch.addEventListener("click" , () =>{
+        body.classList.toggle("dark");
+        
+        if(body.classList.contains("dark")){
+            modeText.innerText = "Light mode";
+        }else{
+            modeText.innerText = "Dark mode";
+            
+        }
+      });
+    </script>
 
 
 
@@ -443,5 +445,5 @@ modeSwitch.addEventListener("click" , () =>{
     <script src="../JS/ChatJs/customSettingsDownload.js"></script>
    
 
-  </body>
+  </div>
 </html>
