@@ -24,7 +24,16 @@ Some students do not know how to create a professional and impactful resume.
 
 
 ## Features
-![Placement Manager]([path/to/your/image.jpg](https://drive.google.com/file/d/1iKqdBfvBC8sb66EgPqVseUyndp6CP1Gs/view?usp=sharing))
+![](path/to/your/image.jpg)
 
 
 ## Visual Representation
+![](path/to/your/image.jpg)
+
+
+## Revenue Model
+We can convert this Idea into business in the following Way:
+1. We can charge Universities/Colleges to Implement our service in their own websites or apps.
+2. Charge participating companies a fee for posting job requirements and participating in the placement drives on the platform.
+3. Offer premium placement services to companies, providing enhanced visibility and priority access to qualified candidates.
+4. Offer virtual interview practice sessions as a premium service, charging students a fee for accessing the virtual assistance and feedback features.
