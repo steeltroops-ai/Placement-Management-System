@@ -405,14 +405,7 @@ textarea{
 .cols-3, .cols-2{
     display: grid;
 }
-.repeater-add-btn{
-    width: 25px;
-    height: 25px;
-    background-color: var(--clr-blue-mid);
-    font-size: 1.6rem;
-    color: var(--clr-white);
-    margin: 1rem 0;
-}
+
 .repeater-remove-btn{
     position: absolute;
     top: 10px;
@@ -582,4 +575,15 @@ textarea{
       line-height: 1.5;
       /* ... */
 }
+}
+
+.repeater-add-btn {
+    background-color: black;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
