@@ -50,81 +50,86 @@
 </head>
 <body>
     <nav class="sidebar close">
-      <header>
-                    
-        <div class="image-text">
-            <span class="image">
-                <img src="https://icon-library.com/images/coding-icon-png/coding-icon-png-18.jpg" alt="logo" width="50" height="50" align="center">
+        <header>
+  
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://icon-library.com/images/coding-icon-png/coding-icon-png-18.jpg" alt="logo"
+                        width="50" height="50" align="center">
+  
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+  
+                <div class="text logo-text">
+                    <span class="name">Placements</span>
+                    <span class="profession">Portal</span>
+                </div>
+            </div>
+  
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+  
+        <div class="menu-bar">
+            <div class="menu">
+  
+                <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+  
+                <ul class="menu-links">
+                    <li class="nav-link">
+                      <a href="../Company/dashboard.html">
+                        <i class="bx bx-home-alt icon"></i>
+                        <span class="text nav-text">Dashboard</span>
+                      </a>
+                    </li>
         
-                <!--<img src="logo.png" alt="">-->
-            </span>
-
-            <div class="text logo-text">
-                <span class="name">Placements</span>
-                <span class="profession">Portal</span>
+                    <li class="nav-link">
+                      <a href="../Company/joblisting.html">
+                        <i class="bx bx-briefcase icon"></i>
+                        <span class="text nav-text">Job Listings</span>
+                      </a>
+                    </li>
+        
+                    
+        
+                    <li class="nav-link">
+                      <a href="../Company/applicants.html">
+                        <i class="bx bx-bar-chart-alt icon"></i>
+                        <span class="text nav-text">Applicants<pan>
+                      </a>
+                    </li>
+        
+                    
+                  </ul>
+                </div>
+        
+                <div class="bottom-content">
+                  
+        
+                  <li class="">
+                    <a href="../Students/homepage.html">
+                      <i class="bx bx-log-out icon"></i>
+                      <span class="text nav-text">Logout</span>
+                    </a>
+                  </li>
+  
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+  
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+  
             </div>
         </div>
-
-        <i class='bx bx-chevron-right toggle'></i>
-    </header>
-
-    <div class="menu-bar">
-        <div class="menu">
-
-            <li class="search-box">
-                <i class='bx bx-search icon'></i>
-                <input type="text" placeholder="Search...">
-            </li>
-
-            <ul class="menu-links">
-                <li class="nav-link">
-                    <a href="../Company/dashboard.html">
-                        <i class='bx bx-home-alt icon' ></i>
-                        <span class="text nav-text">Dashboard</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="../Company/joblisting.html">
-                        <i class='bx bx-briefcase icon' ></i>
-                        <span class="text nav-text">Job Listings</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="../Company/applicants.html">
-                        <i class='bx bx-receipt icon' ></i>
-                        <span class="text nav-text">Applicants</span>
-                    </a>
-                </li>
-
-                
-
-            </ul>
-        </div>
-
-        <div class="bottom-content">
-            <li class="">
-                <a href="../Web/HomePage/index.html">
-                    <i class='bx bx-log-out icon' ></i>
-                    <span class="text nav-text">Logout</span>
-                </a>
-            </li>
-
-            <li class="mode">
-                <div class="sun-moon">
-                    <i class='bx bx-moon icon moon'></i>
-                    <i class='bx bx-sun icon sun'></i>
-                </div>
-                <span class="mode-text text">Dark mode</span>
-
-                <div class="toggle-switch">
-                    <span class="switch"></span>
-                </div>
-            </li>
-            
-        </div>
-    </div>
+  
     </nav>
 
     <section class="home">
@@ -310,8 +315,34 @@
 
           
 
-      <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-      <script src="https://mediafiles.botpress.cloud/47c54b62-3da0-430b-8a24-399c54d7755b/webchat/config.js" defer></script>,
+     
+
+      <script>
+  
+        // Initialization for ES Users
+        import {
+            Carousel,
+            initTE,
+          } from "tw-elements";
+          
+          initTE({ Carousel });
+        </script>
+        <script src="test.js"></script>
+        <!-- Start of ChatBot (www.chatbot.com) code -->
+        <script type="text/javascript">
+          window.__be = window.__be || {};
+          window.__be.id = "64875065b59941000798ee63";
+          (function() {
+              var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+              be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+          })();
+        </script>
+        <!-- End of ChatBot code -->
+
+
+
+
     <script>
         const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
