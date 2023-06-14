@@ -27,8 +27,43 @@ Some students do not know how to create a professional and impactful resume.
 ![Web](Test\Web.jpeg)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Visual Representation
 ![Web](Test\Web.jpeg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
