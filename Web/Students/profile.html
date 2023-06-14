@@ -15,8 +15,31 @@
 
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
         
   
+
+
+    <style>
+      
+        
+      </style>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 </head>
 <body>
@@ -148,432 +171,477 @@
 
 
     
+  
+  
+           <section  class="home">
 
+            
+            <section>
+                <nav x-data="{ isOpen: false }" class="relative bg-white shadow-lg text-black ">
+                  <div class="container px-6 py-3 mx-auto md:flex   ">
+                      <div class="flex items-center justify-between">
+                         
+                          <!-- Mobile menu button -->
+                          
+                      </div>
+              
+                      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                      <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between">
+                          <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0  " >
+                              <a href="#" class="px-2.5 py-2 text-2xl text-left text-gray-900 transition-colors duration-300 transform rounded-lg dark:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Placement Manager</a>
+                              </div>
+              
+                          <div class="relative mt-4 md:mt-0  ">
+                              <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                  <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                                      <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                              </span>
+              
+                              <input type="text" class="w-full py-2 pl-10 pr-4 text-align: left text-gray-900 bg-white border rounded-full dark:bg-white dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search">
+                          </div>
+                      </div>
         
-     
-        `   <section  class="home">
+                      <div class="flex items-center mt-4 lg:mt-0">
+                        <button class="hidden mx-4 text-gray-600 transition-colors duration-300 transform lg:block dark:text-gray-900 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none" aria-label="show notifications">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 17H20L18.5951 15.5951C18.2141 15.2141 18 14.6973 18 14.1585V11C18 8.38757 16.3304 6.16509 14 5.34142V5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5V5.34142C7.66962 6.16509 6 8.38757 6 11V14.1585C6 14.6973 5.78595 15.2141 5.40493 15.5951L4 17H9M15 17V18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18V17M15 17H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+        
+                        <button type="button" class="flex items-center focus:outline-none" aria-label="toggle profile dropdown">
+                            <div class="w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" class="object-cover w-full h-full" alt="avatar">
+                            </div>
+        
+                            <h3 class="mx-2 text-gray-700 dark:text-gray-200 lg:hidden">Khatab wedaa</h3>
+                        </button>
+                    </div>
+                  </div>
+              </nav>
+              </section>
+
                 <div  class="container">
                     
-                
-        
-               
-                <nav class = "navbar bg-white">
-                    <div class="container">
-                        <div class = "navbar-content">
-                            <div class = "brand-and-toggler" >
-                                <a href = "" class = "navbar-brand " >
-                                    <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
-                                    <span class = "navbar-brand-text">Create your own <span>Resume.</span>
-                                </a>
-                                
+<!--             
+                    <nav class = "navbar bg-white">
+                        <div class="container">
+                            <div class = "navbar-content">
+                                <div class = "brand-and-toggler" >
+                                    <a href = "" class = "navbar-brand " >
+                                        <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
+                                        <span class = "navbar-brand-text">Create your own <span>Resume.</span>
+                                    </a>
+                                    
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </nav>
-                <section id = "about-sc" class = "">
-                    <div class = "container">
-                        <div class = "about-cnt">
-                            <form action="" class="cv-form" id = "cv-form">
-                                <div class = "cv-form-blk">
-                                    <div class = "cv-form-row-title">
-                                        <h3>about section</h3>
-                                    </div>
-                                    <div class = "cv-form-row cv-form-row-about">
-                                        <div class = "cols-3">
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">First Name</label>
-                                                <input name = "firstname" type = "text" class = "form-control firstname" id = "" onkeyup="generateCV()" placeholder="e.g. Ram">
-                                                <span class="form-text"></span>
-                                            </div>
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">Middle Name <span class = "opt-text">(optional)</span></label>
-                                                <input name = "middlename" type = "text" class = "form-control middlename" id = "" onkeyup="generateCV()" placeholder="e.g. Kumar">
-                                                <span class="form-text"></span>
-                                            </div>
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">Last Name</label>
-                                                <input name = "lastname" type = "text" class = "form-control lastname" id = "" onkeyup="generateCV()" placeholder="e.g. Sharma">
-                                                <span class="form-text"></span>
-                                            </div>
+                    </nav>
+-->
+                    <section id = "about-sc" class = "">
+                        <div class = "container">
+                            <div class = "about-cnt">
+                                <form action="" class="cv-form" id = "cv-form">
+                                    <div class = "cv-form-blk">
+                                        <div class = "cv-form-row-title">
+                                            <h3>about section</h3>
                                         </div>
-        
-                                        <div class="cols-3">
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">Your Image</label>
-                                                <input name = "image" type = "file" class = "form-control image" id = "" accept = "image/*" onchange="previewImage()">
+                                        <div class = "cv-form-row cv-form-row-about">
+                                            <div class = "cols-3">
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">First Name</label>
+                                                    <input name = "firstname" type = "text" class = "form-control firstname" id = "" onkeyup="generateCV()" placeholder="e.g. Ram">
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">Middle Name <span class = "opt-text">(optional)</span></label>
+                                                    <input name = "middlename" type = "text" class = "form-control middlename" id = "" onkeyup="generateCV()" placeholder="e.g. Kumar">
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">Last Name</label>
+                                                    <input name = "lastname" type = "text" class = "form-control lastname" id = "" onkeyup="generateCV()" placeholder="e.g. Sharma">
+                                                    <span class="form-text"></span>
+                                                </div>
                                             </div>
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">Designation</label>
-                                                <input name = "designation" type = "text" class = "form-control designation" id = "" onkeyup="generateCV()" placeholder="e.g. Developer">
-                                                <span class="form-text"></span>
+            
+                                            <div class="cols-3">
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">Your Image</label>
+                                                    <input name = "image" type = "file" class = "form-control image" id = "" accept = "image/*" onchange="previewImage()">
+                                                </div>
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">Designation</label>
+                                                    <input name = "designation" type = "text" class = "form-control designation" id = "" onkeyup="generateCV()" placeholder="e.g. Developer">
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">Address</label>
+                                                    <input name = "address" type = "text" class = "form-control address" id = "" onkeyup="generateCV()" placeholder="k-38 gyan sarovar colony,Agra, uttar pradesh">
+                                                    <span class="form-text"></span>
+                                                </div>
                                             </div>
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">Address</label>
-                                                <input name = "address" type = "text" class = "form-control address" id = "" onkeyup="generateCV()" placeholder="k-38 gyan sarovar colony,Agra, uttar pradesh">
-                                                <span class="form-text"></span>
-                                            </div>
-                                        </div>
-        
-                                        <div class = "cols-3">
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">Email</label>
-                                                <input name = "email" type = "text" class = "form-control email" id = "" onkeyup="generateCV()" placeholder="e.g. johndoe12@gmail.com">
-                                                <span class="form-text"></span>
-                                            </div>
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">Phone No:</label>
-                                                <input name = "phoneno" type = "text" class = "form-control phoneno" id = "" onkeyup="generateCV()" placeholder="e.g. +(91)-456-768-798">
-                                                <span class="form-text"></span>
-                                            </div>
-                                            <div class = "form-elem">
-                                                <label for = "" class = "form-label">Summary</label>
-                                                <input name = "summary" type = "text" class = "form-control summary" id = "" onkeyup="generateCV()" placeholder="Enter here">
-                                                <span class="form-text"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="cv-form-blk">
-                                    <div class = "cv-form-row-title">
-                                        <h3>achievements</h3>
-                                    </div>
-        
-                                    <div class = "row-separator repeater">
-                                        <div class = "repeater" data-repeater-list = "group-a">
-                                            <div data-repeater-item>
-                                                <div class = "cv-form-row cv-form-row-achievement">
-                                                    <div class = "cols-2">
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Certificates</label>
-                                                            <input name = "achieve_title" type = "text" class = "form-control achieve_title" id = "" onkeyup="generateCV()" placeholder="Enter here">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Description</label>
-                                                            <input name = "achieve_description" type = "text" class = "form-control achieve_description" id = "" onkeyup="generateCV()" placeholder="Enter here">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                    </div>
-                                                    <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
+            
+                                            <div class = "cols-3">
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">Email</label>
+                                                    <input name = "email" type = "text" class = "form-control email" id = "" onkeyup="generateCV()" placeholder="e.g. johndoe12@gmail.com">
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">Phone No:</label>
+                                                    <input name = "phoneno" type = "text" class = "form-control phoneno" id = "" onkeyup="generateCV()" placeholder="e.g. +(91)-456-768-798">
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class = "form-elem">
+                                                    <label for = "" class = "form-label">Summary</label>
+                                                    <input name = "summary" type = "text" class = "form-control summary" id = "" onkeyup="generateCV()" placeholder="Enter here">
+                                                    <span class="form-text"></span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
                                     </div>
-                                </div>
-        
-                                <div class="cv-form-blk">
-                                    <div class = "cv-form-row-title">
-                                        <h3>experience</h3>
-                                    </div>
-        
-                                    <div class = "row-separator repeater">
-                                        <div class = "repeater" data-repeater-list = "group-b">
-                                            <div data-repeater-item>
-                                                <div class = "cv-form-row cv-form-row-experience">
-                                                    <div class = "cols-3">
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Designation</label>
-                                                            <input name = "exp_title" type = "text" class = "form-control exp_title" id = "" onkeyup="generateCV()" >
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Company / Organization</label>
-                                                            <input name = "exp_organization" type = "text" class = "form-control exp_organization" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Location</label>
-                                                            <input name = "exp_location" type = "text" class = "form-control exp_location" id = "" onkeyup="generateCV()" >
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                    </div>
-        
-                                                    <div class = "cols-3">
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Start Date</label>
-                                                            <input name = "exp_start_date" type = "date" class = "form-control exp_start_date" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">End Date</label>
-                                                            <input name = "exp_end_date" type = "date" class = "form-control exp_end_date" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Description</label>
-                                                            <input name = "exp_description" type = "text" class = "form-control exp_description" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                    </div>
-        
-                                                    <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
-                                                </div>
-                                            </div>
+            
+                                    <div class="cv-form-blk">
+                                        <div class = "cv-form-row-title">
+                                            <h3>achievements</h3>
                                         </div>
-                                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
-                                    </div>
-                                </div>
-        
-                                <div class="cv-form-blk">
-                                    <div class = "cv-form-row-title">
-                                        <h3>education</h3>
-                                    </div>
-        
-                                    <div class="row-separator repeater">
-                                        <div class="repeater" data-repeater-list="group-c">
-                                            <div data-repeater-item>
-                                                <div class="cv-form-row cv-form-row-experience">
-                                                    <div class="cols-3">
-                                                        <div class="form-elem">
-                                                            <label for="" class="form-label">School / College</label>
-                                                            <input name="edu_school" type="text" class="form-control edu_school" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
+            
+                                        <div class = "row-separator repeater">
+                                            <div class = "repeater" data-repeater-list = "group-a">
+                                                <div data-repeater-item>
+                                                    <div class = "cv-form-row cv-form-row-achievement">
+                                                        <div class = "cols-2">
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Certificates</label>
+                                                                <input name = "achieve_title" type = "text" class = "form-control achieve_title" id = "" onkeyup="generateCV()" placeholder="Enter here">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Description</label>
+                                                                <input name = "achieve_description" type = "text" class = "form-control achieve_description" id = "" onkeyup="generateCV()" placeholder="Enter here">
+                                                                <span class="form-text"></span>
+                                                            </div>
                                                         </div>
-                                                        <div class="form-elem">
-                                                            <label for="" class="form-label">Education Type:</label>
-                                                            <select name="edu_type" class="form-control edu_type" onchange="handleEducationTypeChange(this)">
-                                                                <option value="school">School</option>
-                                                                <option value="college">College</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-elem">
-                                                            <label for="" class="form-label">Degree</label>
-                                                            <input name="edu_degree" type="text" class="form-control edu_degree" disabled onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class="form-elem">
-                                                            <label for="" class="form-label">City</label>
-                                                            <input name="edu_city" type="text" class="form-control edu_city" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
+                                                        <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
                                                     </div>
-                                    
-                                                    <div class="cols-3">
-                                                        <div class="form-elem">
-                                                            <label for="" class="form-label">Start Date</label>
-                                                            <input name="edu_start_date" type="date" class="form-control edu_start_date" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class="form-elem">
-                                                            <label for="" class="form-label">End Date</label>
-                                                            <input name="edu_graduation_date" type="date" class="form-control edu_graduation_date" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class="form-elem">
-                                                            <label for="" class="form-label">Score</label>
-                                                            <input name="edu_description" type="text" class="form-control edu_description" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                    </div>
-                                    
-                                                    <button data-repeater-delete type="button" class="repeater-remove-btn">-</button>
                                                 </div>
                                             </div>
+                                            <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
                                         </div>
-                                        <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                                     </div>
-                                    
-                                </div>
-        
-                                <div class="cv-form-blk">
-                                    <div class = "cv-form-row-title">
-                                        <h3>projects</h3>
-                                    </div>
-        
-                                    <div class = "row-separator repeater">
-                                        <div class = "repeater" data-repeater-list = "group-d">
-                                            <div data-repeater-item>
-                                                <div class = "cv-form-row cv-form-row-experience">
-                                                    <div class = "cols-3">
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Project Name</label>
-                                                            <input name = "proj_title" type = "text" class = "form-control proj_title" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Project link</label>
-                                                            <input name = "proj_link" type = "text" class = "form-control proj_link" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Description</label>
-                                                            <input name = "proj_description" type = "text" class = "form-control proj_description" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
-                                                        </div>
-                                                    </div>
-                                                    <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
-                                                </div>
-                                            </div>
+            
+                                    <div class="cv-form-blk">
+                                        <div class = "cv-form-row-title">
+                                            <h3>experience</h3>
                                         </div>
-                                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
-                                    </div>
-                                </div>
-        
-                                <div class="cv-form-blk">
-                                    <div class = "cv-form-row-title">
-                                        <h3>skills</h3>
-                                    </div>
-        
-                                    <div class = "row-separator repeater">
-                                        <div class = "repeater" data-repeater-list = "group-e">
-                                            <div data-repeater-item>
-                                                <div class = "cv-form-row cv-form-row-skills">
-                                                    <div class = "form-elem">
-                                                        <label for = "" class = "form-label">Skill</label>
-                                                        <input name = "skill" type = "text" class = "form-control skill" id = "" onkeyup="generateCV()">
-                                                        <span class="form-text"></span>
+            
+                                        <div class = "row-separator repeater">
+                                            <div class = "repeater" data-repeater-list = "group-b">
+                                                <div data-repeater-item>
+                                                    <div class = "cv-form-row cv-form-row-experience">
+                                                        <div class = "cols-3">
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Designation</label>
+                                                                <input name = "exp_title" type = "text" class = "form-control exp_title" id = "" onkeyup="generateCV()" >
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Company / Organization</label>
+                                                                <input name = "exp_organization" type = "text" class = "form-control exp_organization" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Location</label>
+                                                                <input name = "exp_location" type = "text" class = "form-control exp_location" id = "" onkeyup="generateCV()" >
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                        </div>
+            
+                                                        <div class = "cols-3">
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Start Date</label>
+                                                                <input name = "exp_start_date" type = "date" class = "form-control exp_start_date" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">End Date</label>
+                                                                <input name = "exp_end_date" type = "date" class = "form-control exp_end_date" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Description</label>
+                                                                <input name = "exp_description" type = "text" class = "form-control exp_description" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                        </div>
+            
+                                                        <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
                                                     </div>
-                                                    
-                                                    <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
                                                 </div>
                                             </div>
+                                            <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
                                         </div>
-                                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
                                     </div>
-                                </div>
-        
-                                <div class="cv-form-blk">
-                                    <div class = "cv-form-row-title">
-                                        <h3>Links</h3>
-                                    </div>
-        
-                                    <div class = "row-separator repeater">
-                                        <div class = "repeater" data-repeater-list = "group-f">
-                                            <div data-repeater-item>
-                                                <div class = "cv-form-row cv-form-row-experience">
-                                                    <div class = "cols-3">
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Github Profile</label>
-                                                            <input name = "git_link" type = "text" class = "form-control github_link" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
+            
+                                    <div class="cv-form-blk">
+                                        <div class = "cv-form-row-title">
+                                            <h3>education</h3>
+                                        </div>
+            
+                                        <div class="row-separator repeater">
+                                            <div class="repeater" data-repeater-list="group-c">
+                                                <div data-repeater-item>
+                                                    <div class="cv-form-row cv-form-row-experience">
+                                                        <div class="cols-3">
+                                                            <div class="form-elem">
+                                                                <label for="" class="form-label">School / College</label>
+                                                                <input name="edu_school" type="text" class="form-control edu_school" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class="form-elem">
+                                                                <label for="" class="form-label">Education Type:</label>
+                                                                <select name="edu_type" class="form-control edu_type" onchange="handleEducationTypeChange(this)">
+                                                                    <option value="school">School</option>
+                                                                    <option value="college">College</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-elem">
+                                                                <label for="" class="form-label">Degree</label>
+                                                                <input name="edu_degree" type="text" class="form-control edu_degree" disabled onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class="form-elem">
+                                                                <label for="" class="form-label">City</label>
+                                                                <input name="edu_city" type="text" class="form-control edu_city" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
                                                         </div>
-                                                        <div class = "form-elem">
-                                                            <label for = "" class = "form-label">Linkdln Profile</label>
-                                                            <input name = "ld_link" type = "text" class = "form-control linkdln_link" id = "" onkeyup="generateCV()">
-                                                            <span class="form-text"></span>
+                                        
+                                                        <div class="cols-3">
+                                                            <div class="form-elem">
+                                                                <label for="" class="form-label">Start Date</label>
+                                                                <input name="edu_start_date" type="date" class="form-control edu_start_date" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class="form-elem">
+                                                                <label for="" class="form-label">End Date</label>
+                                                                <input name="edu_graduation_date" type="date" class="form-control edu_graduation_date" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class="form-elem">
+                                                                <label for="" class="form-label">Score</label>
+                                                                <input name="edu_description" type="text" class="form-control edu_description" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
                                                         </div>
-                                                       
+                                        
+                                                        <button data-repeater-delete type="button" class="repeater-remove-btn">-</button>
                                                     </div>
-                                                    
                                                 </div>
                                             </div>
+                                            <button type="button" data-repeater-create value="Add" class="repeater-add-btn">+</button>
                                         </div>
                                         
                                     </div>
-                                </div>
-                            </form>
+            
+                                    <div class="cv-form-blk">
+                                        <div class = "cv-form-row-title">
+                                            <h3>projects</h3>
+                                        </div>
+            
+                                        <div class = "row-separator repeater">
+                                            <div class = "repeater" data-repeater-list = "group-d">
+                                                <div data-repeater-item>
+                                                    <div class = "cv-form-row cv-form-row-experience">
+                                                        <div class = "cols-3">
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Project Name</label>
+                                                                <input name = "proj_title" type = "text" class = "form-control proj_title" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Project link</label>
+                                                                <input name = "proj_link" type = "text" class = "form-control proj_link" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Description</label>
+                                                                <input name = "proj_description" type = "text" class = "form-control proj_description" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                        </div>
+                                                        <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cv-form-blk">
+                                        <div class = "cv-form-row-title">
+                                            <h3>skills</h3>
+                                        </div>
+            
+                                        <div class = "row-separator repeater">
+                                            <div class = "repeater" data-repeater-list = "group-e">
+                                                <div data-repeater-item>
+                                                    <div class = "cv-form-row cv-form-row-skills">
+                                                        <div class = "form-elem">
+                                                            <label for = "" class = "form-label">Skill</label>
+                                                            <input name = "skill" type = "text" class = "form-control skill" id = "" onkeyup="generateCV()">
+                                                            <span class="form-text"></span>
+                                                        </div>
+                                                        
+                                                        <button data-repeater-delete type = "button" class = "repeater-remove-btn">-</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">+</button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cv-form-blk">
+                                        <div class = "cv-form-row-title">
+                                            <h3>Links</h3>
+                                        </div>
+            
+                                        <div class = "row-separator repeater">
+                                            <div class = "repeater" data-repeater-list = "group-f">
+                                                <div data-repeater-item>
+                                                    <div class = "cv-form-row cv-form-row-experience">
+                                                        <div class = "cols-3">
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Github Profile</label>
+                                                                <input name = "git_link" type = "text" class = "form-control github_link" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                            <div class = "form-elem">
+                                                                <label for = "" class = "form-label">Linkdln Profile</label>
+                                                                <input name = "ld_link" type = "text" class = "form-control linkdln_link" id = "" onkeyup="generateCV()">
+                                                                <span class="form-text"></span>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                </section>
-        
-                <section id = "preview-sc" class = "print_area">
-                    <div class = "container">
-                        <div class = "preview-cnt">
-                            <div class = "preview-cnt-l bg-black text-white">
-                                <div class = "preview-blk">
-                                    <div class = "preview-image">
-                                        <img src = "" alt = "" id = "image_dsp"> 
+                    </section>
+            
+                    <section id = "preview-sc" class = "print_area">
+                        <div class = "container">
+                            <div class = "preview-cnt">
+                                <div class = "preview-cnt-l bg-black text-white">
+                                    <div class = "preview-blk">
+                                        <div class = "preview-image">
+                                            <img src = "" alt = "" id = "image_dsp"> 
+                                        </div>
+                                        <div class = "preview-item preview-item-name">
+                                            <span class = "preview-item-val fw-6" id = "fullname_dsp"></span>
+                                        </div>
+                                        <div class = "preview-item">
+                                            <span class = "preview-item-val text-uppercase fw-6 ls-1" id = "designation_dsp"></span>
+                                        </div>
                                     </div>
-                                    <div class = "preview-item preview-item-name">
-                                        <span class = "preview-item-val fw-6" id = "fullname_dsp"></span>
+            
+                                    <div class = "preview-blk">
+                                        <div class = "preview-blk-title">
+                                            <h3>about</h3>
+                                        </div>
+                                        <div class = "preview-blk-list">
+                                            <div class = "preview-item">
+                                                <span class = "preview-item-val" id = "phoneno_dsp"></span>
+                                            </div>
+                                            <div class = "preview-item">
+                                                <span class = "preview-item-val" id = "email_dsp"></span>
+                                            </div>
+                                            <div class = "preview-item">
+                                                <span class = "preview-item-val" id = "address_dsp"></span>
+                                            </div>
+                                            <div class = "preview-item">
+                                                <span class = "preview-item-val" id = "summary_dsp"></span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class = "preview-item">
-                                        <span class = "preview-item-val text-uppercase fw-6 ls-1" id = "designation_dsp"></span>
+            
+                                    <div class = "preview-blk">
+                                        <div class = "preview-blk-title">
+                                            <h3>skills</h3>
+                                        </div>
+                                        <div class = "skills-items preview-blk-list" id = "skills_dsp">
+                                            <!-- skills list here -->
+                                        </div>
                                     </div>
                                 </div>
-        
-                                <div class = "preview-blk">
-                                    <div class = "preview-blk-title">
-                                        <h3>about</h3>
+            
+                                <div class = "preview-cnt-r bg-white">
+                                    <div class = "preview-blk">
+                                        <div class = "preview-blk-title">
+                                            <h3>Achievements</h3>
+                                        </div>
+                                        <div class = "achievements-items preview-blk-list" id = "achievements_dsp"></div>
                                     </div>
-                                    <div class = "preview-blk-list">
-                                        <div class = "preview-item">
-                                            <span class = "preview-item-val" id = "phoneno_dsp"></span>
+            
+                                    <div class = "preview-blk">
+                                        <div class = "preview-blk-title">
+                                            <h3>educations</h3>
                                         </div>
-                                        <div class = "preview-item">
-                                            <span class = "preview-item-val" id = "email_dsp"></span>
-                                        </div>
-                                        <div class = "preview-item">
-                                            <span class = "preview-item-val" id = "address_dsp"></span>
-                                        </div>
-                                        <div class = "preview-item">
-                                            <span class = "preview-item-val" id = "summary_dsp"></span>
-                                        </div>
+                                        <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
                                     </div>
-                                </div>
-        
-                                <div class = "preview-blk">
-                                    <div class = "preview-blk-title">
-                                        <h3>skills</h3>
+            
+                                    <div class = "preview-blk">
+                                        <div class = "preview-blk-title">
+                                            <h3>experiences</h3>
+                                        </div>
+                                        <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
                                     </div>
-                                    <div class = "skills-items preview-blk-list" id = "skills_dsp">
-                                        <!-- skills list here -->
+            
+                                    <div class = "preview-blk">
+                                        <div class = "preview-blk-title">
+                                            <h3>projects</h3>
+                                        </div>
+                                        <div class = "projects-items preview-blk-list" id = "projects_dsp"></div>
+                                    </div>
+            
+                                    <div class = "preview-blk">
+                                        <div class = "preview-blk-title">
+                                            <h3>Links</h3>
+                                        </div>
+                                        <div class = "projects-items preview-blk-list" id = "links_dsp"></div>
                                     </div>
                                 </div>
                             </div>
-        
-                            <div class = "preview-cnt-r bg-white">
-                                <div class = "preview-blk">
-                                    <div class = "preview-blk-title">
-                                        <h3>Achievements</h3>
-                                    </div>
-                                    <div class = "achievements-items preview-blk-list" id = "achievements_dsp"></div>
-                                </div>
-        
-                                <div class = "preview-blk">
-                                    <div class = "preview-blk-title">
-                                        <h3>educations</h3>
-                                    </div>
-                                    <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
-                                </div>
-        
-                                <div class = "preview-blk">
-                                    <div class = "preview-blk-title">
-                                        <h3>experiences</h3>
-                                    </div>
-                                    <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
-                                </div>
-        
-                                <div class = "preview-blk">
-                                    <div class = "preview-blk-title">
-                                        <h3>projects</h3>
-                                    </div>
-                                    <div class = "projects-items preview-blk-list" id = "projects_dsp"></div>
-                                </div>
-        
-                                <div class = "preview-blk">
-                                    <div class = "preview-blk-title">
-                                        <h3>Links</h3>
-                                    </div>
-                                    <div class = "projects-items preview-blk-list" id = "links_dsp"></div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
+                    </section>
+            
+                    <section class = "print-btn-sc">
+                        <div class = "container">
+                            <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print CV</button>
+                        </div>
+                    </section>
+            
+                </div>
                 </section>
-        
-                <section class = "print-btn-sc">
-                    <div class = "container">
-                        <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print CV</button>
-                    </div>
-                </section>
-        
-            </div>
-            </section>
-                
-        
-                <!-- jquery cdn -->
-                <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-                <!-- jquery repeater cdn -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <!-- custom js -->
-                <script src = "../JS/resume.js"></script>
-                <!-- app js -->
-                <script src="../JS/app_resume.js"></script>
-                <script src="../JS/"></script>
-           
+                    
+            
+                    <!-- jquery cdn -->
+                    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+                    <!-- jquery repeater cdn -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <!-- custom js -->
+                    <script src = "../JS/resume.js"></script>
+                    <!-- app js -->
+                    <script src="../JS/app_resume.js"></script>
+                    <script src="../JS/"></script>
+               
   
 
 
@@ -585,44 +653,41 @@
 	
 		
    
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
     
-                <script>
-                    const body = document.querySelector('body'),
-                    sidebar = body.querySelector('nav'),
-                    toggle = body.querySelector(".toggle"),
-                    searchBtn = body.querySelector(".search-box"),
-                    modeSwitch = body.querySelector(".toggle-switch"),
-                    modeText = body.querySelector(".mode-text");
-              
-              
-                    toggle.addEventListener("click" , () =>{
-                      sidebar.classList.toggle("close");
-                    })
-              
-                    searchBtn.addEventListener("click" , () =>{
-                      sidebar.classList.remove("close");
-                    })
-              
-                    modeSwitch.addEventListener("click" , () =>{
-                      body.classList.toggle("dark");
-                      
-                      if(body.classList.contains("dark")){
-                          modeText.innerText = "Light mode";
-                      }else{
-                          modeText.innerText = "Dark mode";
-                          
-                      }
-                    });
-                  </script>
-              
-              
-                  
-                  
-                  <script src="../JS/ChatJs/chatBotAnimate.js"></script>
-                  <script src="../JS/ChatJs/chatBotConversation.js"></script>
-                  <script src="../JS/ChatJs/chatBotCustom.js"></script>
-                  <script src="../JS/ChatJs/chatBotLiveCustom.js"></script>
-                  <script src="../JS/ChatJs/chatBotValidate.js"></script>
-                  <script src="../JS/ChatJs/customSettingsDownload.js"></script>
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+<script src="../JS/ChatJs/chatBotAnimate.js"></script>
+<script src="../JS/ChatJs/chatBotConversation.js"></script>
+<script src="../JS/ChatJs/chatBotCustom.js"></script>
+<script src="../JS/ChatJs/chatBotLiveCustom.js"></script>
+<script src="../JS/ChatJs/chatBotValidate.js"></script>
+<script src="../JS/ChatJs/customSettingsDownload.js"></script>
+
 </body>
 </html>

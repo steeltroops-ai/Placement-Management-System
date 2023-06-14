@@ -9,6 +9,12 @@
     position: relative;
     
   }
+
+
+  .home-content{
+    position: relative;
+    padding-top: 104px;    
+  }
   .container {        
       display: flex;
       align-items: center;

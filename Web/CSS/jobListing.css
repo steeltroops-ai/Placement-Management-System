@@ -17,7 +17,17 @@
     border-bottom: 0 solid #d9dee3;
   }
 
-  
+  .home{
+    flex-wrap: wrap; /* Added flex-wrap property */
+    flex: 1;
+    padding-left:auto;  
+    padding-right: auto;  
+    margin-left: 7px;
+    margin-right: 7px;     
+    align-content: center;
+    position: relative;
+    
+  }
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
