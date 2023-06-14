@@ -129,23 +129,6 @@
           </div>
         </div>
 
-        <div class="chatBot">
-          <div class="chatBotHeading">
-              <label for="chatTextBox" id="chatOpenTrigger" class="">Queries</label>
-          </div>
-          <hr class="">
-          <div class="chatBody">
-              <div class="chatSession">
-              </div>
-          </div>
-          <form class="chatForm" autocomplete="off">
-              <div class="typingArea">
-                  <textarea name="chatInput" id="chatTextBox" method="GET" class="textArea" onblur="if(!validateMessage()) this.value = 'Type here...'" onfocus="if(!validateMessage()) this.value = ''"></textarea>
-                  <button type="submit" class="sendButton" id="sendButton"><img src="../CSS/Gfx/send.svg" alt="Send" srcset=""></button>
-              </div>
-              <button type="button" id="chatCloseTrigger">Close Chat!</button>
-          </form>
-        </div>
         
         </nav>
 
@@ -166,7 +149,7 @@
                   <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                   <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between">
                       <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0  " >
-                          <a href="#" class="px-2.5 py-2 text-2xl text-left text-gray-900 transition-colors duration-300 transform rounded-lg dark:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Placement Manager</a>
+                          <a href="#" class="px-2.5 py-2 text-2xl text-left text-gray-900 transition-colors duration-300 transform rounded-lg dark:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Startup Recources</a>
                           </div>
           
                       <div class="relative mt-4 md:mt-0  ">
@@ -233,6 +216,21 @@
               }
             });
           </script>
+
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+      window.__be = window.__be || {};
+      window.__be.id = "64875065b59941000798ee63";
+      (function() {
+          var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+          be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+      })();
+    </script>
+    <!-- End of ChatBot code -->
+
+
           <script src="../JS/ChatJs/chatBotAnimate.js"></script>
           <script src="../JS/ChatJs/chatBotConversation.js"></script>
           <script src="../JS/ChatJs/chatBotCustom.js"></script>
