@@ -15,18 +15,6 @@
     --transition: all 300ms ease-in-out;
 }
 
-  .home{
-    flex-wrap: wrap; /* Added flex-wrap property */
-    flex: 1;
-    padding-left:auto;  
-    padding-right: auto;  
-    margin-left: 7px;
-    margin-right: 7px;     
-    align-content: center;
-    position: relative;
-    
-  }
-
 *{
     padding: 0;
     margin: 0;
@@ -122,11 +110,9 @@ a{
 .ls-2{letter-spacing: 2px;}
 
 .container{
-    
+    max-width: 1200px;
     margin: 0 auto;
-    
-    padding-left: 6%;
-    padding-right: 5%;
+    padding: 0 1.6rem;
 }
 
 /* bars button */
@@ -187,21 +173,16 @@ a{
     margin-right: 1rem!important;
 }
 
-
-
 /* navbar part */
 .navbar{
     height: 80px;
     display: flex;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
-    
 }
 
 .navbar .container{
     width: 100%;
-    
-    
 }
 
 .navbar-brand{
@@ -209,12 +190,10 @@ a{
     align-items: center;
     justify-content: flex-start;
     font-size: 1.8rem;
-    
 }
 .navbar-brand-text{
     color: var(--clr-dark);
     font-weight: 600;
-    
 }
 .navbar-brand-text span{
     color: var(--clr-blue);
@@ -589,19 +568,18 @@ textarea{
 /* print section */
 @media print {
     body * {
-        display: none;
+      display: none;
     }
-
-    .print_area,
-    .print_area * {
-        display: block;
-    }
-
-    .print_area {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        overflow:hidden;
+  
+    #preview-sc.print_area,
+    #preview-sc.print_area * {
+      display: block;
+      /* Add the CSS styles applied to the section here */
+      /* Example styles: */
+      color: #000;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      /* ... */
 }
 }
