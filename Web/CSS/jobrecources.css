@@ -1,8 +1,8 @@
 .home{
   flex-wrap: wrap; /* Added flex-wrap property */
   flex: 1;
-  padding-left:auto;  
-  padding-right: auto;  
+  padding-left:7%;  
+  padding-right: 6%;  
   margin-left: 7px;
   margin-right: 7px;     
   align-content: center;
