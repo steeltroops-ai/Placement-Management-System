@@ -95,7 +95,7 @@ These features collectively aim to assist students in overcoming placement chall
 
 
 ## Visual Representation
-![Home Page](Test\Web.jpeg)
+![Home Page](Test/Web.jpeg)
 
 
 
