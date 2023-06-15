@@ -16,10 +16,19 @@
 }
 
 .steel{
-    padding-left: 6%;
+    flex-wrap: wrap; /* Added flex-wrap property */
+  flex: 1;
+  padding-left:auto;  
+  padding-right: auto;  
+  margin-left: 7px;
+  margin-right: 7px;     
+  align-content: center;
+  position: relative;
+}
+.mps{
+    padding-left: 10%;
     padding-right: 5%;
 }
-
 *{
     padding: 0;
     margin: 0;
