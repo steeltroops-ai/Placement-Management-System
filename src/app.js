@@ -23,6 +23,30 @@ hbs.registerPartials(partials_path)
 app.get("/",(req, res)=>{
     res.render("index")
 });
+app.get("/",(req, res)=>{
+    res.render("dashboard")
+});
+app.get("/",(req, res)=>{
+    res.render("interviewprep")
+});
+app.get("/",(req, res)=>{
+    res.render("joblisting")
+});
+app.get("/",(req, res)=>{
+    res.render("jobrecources")
+});
+app.get("/",(req, res)=>{
+    res.render("mentalsupport")
+});
+app.get("/",(req, res)=>{
+    res.render("notification")
+});
+app.get("/",(req, res)=>{
+    res.render("profile")
+});
+app.get("/",(req, res)=>{
+    res.render("signup")
+});
 
 app.listen(port,()=>{
     console.log(`server is running at port no ${port}`);
