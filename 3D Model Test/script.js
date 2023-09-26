@@ -1,48 +1,62 @@
-<script src="three.min.js"></script>
+let scene, camera, renderer, cube, secondModel, character;
 
+function init() {
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-scene = new THREE.Scene();
-scene.background = new THREE.Color(0xdddddd);
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('canvas-container').appendChild(renderer.domElement);
 
-camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
-camera.rotation.y = 45/180*Math.PI;
-camera.position.x = 800;
-camera.position.y = 100;
-camera.position.z = 1000;
+    // Create a cube (first model)
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
 
-renderer = new THREE.WebGLRenderer({antialias:true});
-renderer.setSize(window.innerWidth,window.innerHeight);
-document.body.appendChild(renderer.domElement);
+    // Create a second cube (second model)
+    const geometry2 = new THREE.BoxGeometry();
+    const material2 = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+    secondModel = new THREE.Mesh(geometry2, material2);
+    secondModel.position.set(2, 0, 0);
+    scene.add(secondModel);
 
+    // Load the 3D character model (GLB format)
+    const loader = new THREE.GLTFLoader();
+    loader.load('../3D Model Test/anime-boy.glbZ', (gltf) => {
+        character = gltf.scene;
+        character.scale.set(0.1, 0.1, 0.1); // Scale the character as needed
+        character.position.set(-2, 0, 0); // Position the character
+        scene.add(character);
+    });
 
-hlight = new THREE.AmbientLight (0x404040,100);
-scene.add(hlight);
+    // Position the camera
+    camera.position.z = 5;
+}
 
-directionalLight = new THREE.DirectionalLight(0xffffff,100);
-directionalLight.position.set(0,1,0);
-directionalLight.castShadow = true;
-scene.add(directionalLight);
+function animate() {
+    requestAnimationFrame(animate);
 
-light = new THREE.PointLight(0xc4c4c4,10);
-light.position.set(0,300,500);
-scene.add(light);
+    // Rotate the first model
+    cube.rotation.x += 0.01;
+    cube.rotation.y += 0.01;
 
-light2 = new THREE.PointLight(0xc4c4c4,10);
-light2.position.set(500,100,0);
-scene.add(light2);
+    // Rotate the second model
+    if (secondModel) {
+        secondModel.rotation.x += 0.01;
+        secondModel.rotation.y += 0.01;
+    }
 
-light3 = new THREE.PointLight(0xc4c4c4,10);
-light3.position.set(0,100,-500);
-scene.add(light3);
+    renderer.render(scene, camera);
+}
 
-light4 = new THREE.PointLight(0xc4c4c4,10);
-light4.position.set(-500,300,500);
-scene.add(light4);
+function onWindowResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+}
 
-let loader = new THREE.GLTFLoader();
-loader.load('scene.gltf', function(gltf){
-  car = gltf.scene.children[0];
-  car.scale.set(0.5,0.5,0.5);
-  scene.add(gltf.scene);
-  animate();
-});
+window.addEventListener('resize', onWindowResize);
+
+init();
+animate();
